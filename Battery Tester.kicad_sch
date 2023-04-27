@@ -1857,11 +1857,11 @@
         )
       )
     )
-    (symbol "Mechanical:Heatsink_Pad" (pin_names (offset 0)) (in_bom yes) (on_board yes)
+    (symbol "Mechanical:Heatsink_Pad_2Pin" (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "HS" (at 0 5.715 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "Heatsink_Pad" (at 0 3.81 0)
+      (property "Value" "Heatsink_Pad_2Pin" (at 0 3.81 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at 0.3048 -1.27 0)
@@ -1873,13 +1873,13 @@
       (property "ki_keywords" "thermal heat temperature" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Heatsink with electrical connection, 1 pin" (at 0 0 0)
+      (property "ki_description" "Heatsink with electrical connection, 2 pin" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_fp_filters" "Heatsink_*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "Heatsink_Pad_0_1"
+      (symbol "Heatsink_Pad_2Pin_0_1"
         (polyline
           (pts
             (xy -0.3302 0)
@@ -1916,10 +1916,14 @@
           (fill (type background))
         )
       )
-      (symbol "Heatsink_Pad_1_1"
-        (pin passive line (at 0 -2.54 90) (length 1.27)
+      (symbol "Heatsink_Pad_2Pin_1_1"
+        (pin passive line (at -2.54 -2.54 90) (length 1.27)
           (name "~" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 2.54 -2.54 90) (length 1.27)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -3139,6 +3143,9 @@
   (junction (at 233.553 74.041) (diameter 0) (color 0 0 0 0)
     (uuid 38928580-e7c9-4331-8ae8-13b262387f35)
   )
+  (junction (at 609.092 81.534) (diameter 0) (color 0 0 0 0)
+    (uuid 393a3756-7e56-48de-8521-5e58d9d5f680)
+  )
   (junction (at 106.172 147.701) (diameter 0) (color 0 0 0 0)
     (uuid 3af9675e-7365-4b63-aba0-2bdc7c259791)
   )
@@ -3183,6 +3190,9 @@
   )
   (junction (at 687.959 52.451) (diameter 0) (color 0 0 0 0)
     (uuid 5eaf844a-2f04-4e0a-b0a8-a623d44695f9)
+  )
+  (junction (at 609.092 84.074) (diameter 0) (color 0 0 0 0)
+    (uuid 605c7380-7e5e-4c4c-85a9-5cd794e715c0)
   )
   (junction (at 114.427 58.801) (diameter 0) (color 0 0 0 0)
     (uuid 65c11b59-9feb-48e5-a81c-69931dcabc44)
@@ -3322,6 +3332,9 @@
   (junction (at -59.055 141.986) (diameter 0) (color 0 0 0 0)
     (uuid c82298da-7521-411a-b757-2b5dc3cff593)
   )
+  (junction (at 333.883 155.321) (diameter 0) (color 0 0 0 0)
+    (uuid cbc42e37-a393-46e5-9f39-9510be0beeee)
+  )
   (junction (at -32.004 83.947) (diameter 0) (color 0 0 0 0)
     (uuid cc11cf20-010a-42ce-aad9-84e0e03400a6)
   )
@@ -3349,6 +3362,9 @@
   (junction (at 34.671 94.361) (diameter 0) (color 0 0 0 0)
     (uuid e1abb253-b268-4d4f-810a-0e3d022b4942)
   )
+  (junction (at 333.883 157.861) (diameter 0) (color 0 0 0 0)
+    (uuid e436d861-1efd-4cd9-beae-1a75c6060b91)
+  )
   (junction (at 50.673 76.581) (diameter 0) (color 0 0 0 0)
     (uuid e6b67281-f871-44ee-9cd4-e1d885203461)
   )
@@ -3366,6 +3382,9 @@
   )
   (junction (at 687.959 58.801) (diameter 0) (color 0 0 0 0)
     (uuid f258cdb8-9e2d-4af9-9583-cd098c50693c)
+  )
+  (junction (at 130.048 286.131) (diameter 0) (color 0 0 0 0)
+    (uuid f25da5b8-acbd-4942-990f-6aebbfc872d2)
   )
   (junction (at 466.725 196.088) (diameter 0) (color 0 0 0 0)
     (uuid f3150f59-2507-4023-9b1c-f620fbfb48bf)
@@ -3408,7 +3427,6 @@
   (no_connect (at 332.613 204.978) (uuid ad9ccff2-46ef-4dc5-899d-55ef8e3e2598))
   (no_connect (at 561.213 184.531) (uuid adcb11e7-7574-455f-bea7-b227fab51757))
   (no_connect (at 459.613 193.548) (uuid b552ee2a-7430-48a6-b1bf-a16b13102eb5))
-  (no_connect (at 103.632 122.301) (uuid bb820350-d69e-43e0-bf04-c0caf6607d29))
   (no_connect (at 332.613 197.358) (uuid bbe1cbb5-e510-4ffb-b75a-3e7388179102))
   (no_connect (at 183.515 303.911) (uuid c3f9335f-8018-4701-898f-17917f292a48))
   (no_connect (at 720.725 60.071) (uuid c640216f-9169-4704-b0a7-01d008dafda0))
@@ -3885,6 +3903,10 @@
     (stroke (width 0) (type default))
     (uuid 2f5f4e13-5057-4440-a36f-78bd70ab976e)
   )
+  (wire (pts (xy 609.092 81.534) (xy 611.124 81.534))
+    (stroke (width 0) (type default))
+    (uuid 2fd106f2-7c7b-4bfd-9c13-c960066362ec)
+  )
   (wire (pts (xy 60.325 40.132) (xy 60.325 41.275))
     (stroke (width 0) (type default))
     (uuid 307dc981-b394-4a1b-af4d-b9a7208a92ee)
@@ -3961,10 +3983,6 @@
     (stroke (width 0) (type solid))
     (uuid 381f21b9-e870-43f4-8783-1313a04fc5c2)
   )
-  (wire (pts (xy 611.124 81.534) (xy 608.838 81.534))
-    (stroke (width 0) (type default))
-    (uuid 38288830-40d5-41c3-a697-48f9c8d437ce)
-  )
   (wire (pts (xy 444.373 203.708) (xy 444.373 205.74))
     (stroke (width 0) (type default))
     (uuid 39fa44ee-3c05-4925-b05b-d2bee46e55d8)
@@ -3985,6 +4003,10 @@
     (stroke (width 0) (type default))
     (uuid 3ce7e679-2938-4f0c-968a-6ef7714d6bfc)
   )
+  (wire (pts (xy 130.048 286.131) (xy 135.128 286.131))
+    (stroke (width 0) (type default))
+    (uuid 3d0f0b5a-b374-4aa8-904d-f43ba635cc76)
+  )
   (wire (pts (xy 106.172 147.701) (xy 106.172 149.733))
     (stroke (width 0) (type default))
     (uuid 3d35d0c0-a647-4dda-af91-d782220a858c)
@@ -4004,6 +4026,10 @@
   (wire (pts (xy 468.63 112.395) (xy 471.551 112.395))
     (stroke (width 0) (type default))
     (uuid 3f63b62c-6744-42ea-9529-27d89e2e58a6)
+  )
+  (wire (pts (xy 333.883 155.321) (xy 331.978 155.321))
+    (stroke (width 0) (type default))
+    (uuid 3fd867b7-e0a6-47aa-a274-06329a203169)
   )
   (wire (pts (xy 50.8 96.266) (xy 44.069 96.266))
     (stroke (width 0) (type default))
@@ -4049,6 +4075,10 @@
     (stroke (width 0) (type solid))
     (uuid 46363bb2-f5a6-43a2-8c89-a49899ce9b26)
   )
+  (wire (pts (xy 605.155 84.074) (xy 609.092 84.074))
+    (stroke (width 0) (type default))
+    (uuid 477ae4a1-6c28-41fb-a4be-91534669686a)
+  )
   (wire (pts (xy 103.632 117.221) (xy 116.205 117.221))
     (stroke (width 0) (type default))
     (uuid 48938bdf-8662-4e46-b055-563567092b05)
@@ -4092,6 +4122,10 @@
   (wire (pts (xy 459.613 178.308) (xy 474.599 178.308))
     (stroke (width 0) (type default))
     (uuid 4c267917-36a2-492b-aed7-8d7d92542769)
+  )
+  (wire (pts (xy 135.128 286.131) (xy 135.128 285.115))
+    (stroke (width 0) (type default))
+    (uuid 4c8a1629-e441-4e1b-86b9-dcb632fe994e)
   )
   (wire (pts (xy -48.768 141.986) (xy -45.593 141.986))
     (stroke (width 0) (type default))
@@ -4213,7 +4247,7 @@
     (stroke (width 0) (type default))
     (uuid 5b3875df-cc03-4871-9b38-96b9e15e481d)
   )
-  (wire (pts (xy 611.124 84.074) (xy 608.838 84.074))
+  (wire (pts (xy 609.092 84.074) (xy 611.124 84.074))
     (stroke (width 0) (type default))
     (uuid 5c0fcdc4-f249-419d-8483-e8f28900f3ce)
   )
@@ -4353,7 +4387,7 @@
     (stroke (width 0) (type default))
     (uuid 6886a0bc-5273-4272-8314-0093648344e3)
   )
-  (wire (pts (xy 608.838 85.852) (xy 608.838 84.074))
+  (wire (pts (xy 605.155 85.852) (xy 605.155 84.074))
     (stroke (width 0) (type default))
     (uuid 68c18848-37fd-40b0-afce-767c80eeed96)
   )
@@ -4942,6 +4976,10 @@
     (stroke (width 0) (type default))
     (uuid a86167a7-ec22-41f7-9eb9-5fa2199f2b7b)
   )
+  (wire (pts (xy 605.155 81.534) (xy 609.092 81.534))
+    (stroke (width 0) (type default))
+    (uuid a8a21c09-42ea-46c0-9a1b-d4908460c728)
+  )
   (wire (pts (xy -32.131 60.452) (xy -23.749 60.452))
     (stroke (width 0) (type default))
     (uuid a9eae6f5-c93c-41b7-9be5-0f88110d4b0f)
@@ -4957,6 +4995,10 @@
   (wire (pts (xy 50.927 276.098) (xy 50.927 277.622))
     (stroke (width 0) (type default))
     (uuid ab1f74a2-1577-49a1-bf13-bbc50a62ce97)
+  )
+  (wire (pts (xy 103.632 122.301) (xy 116.205 122.301))
+    (stroke (width 0) (type default))
+    (uuid abb7411c-6142-4dc4-824c-35578bfcc1ea)
   )
   (wire (pts (xy 325.755 55.118) (xy 325.755 57.785))
     (stroke (width 0) (type default))
@@ -5037,6 +5079,10 @@
   (wire (pts (xy 419.608 191.008) (xy 419.608 197.612))
     (stroke (width 0) (type default))
     (uuid b3e8a8ab-ba50-42e1-9387-e53a7cd044ef)
+  )
+  (wire (pts (xy 333.883 157.861) (xy 325.247 157.861))
+    (stroke (width 0) (type default))
+    (uuid b4fecc43-ac75-4e86-8a92-88c68e668fdd)
   )
   (wire (pts (xy 189.357 131.572) (xy 189.357 128.651))
     (stroke (width 0) (type default))
@@ -5254,7 +5300,7 @@
     (stroke (width 0) (type default))
     (uuid ca7cd3e7-474f-4f20-aada-fed7c538f54f)
   )
-  (wire (pts (xy 334.264 155.321) (xy 331.978 155.321))
+  (wire (pts (xy 334.264 155.321) (xy 333.883 155.321))
     (stroke (width 0) (type default))
     (uuid ca9577d1-9328-4b61-b6bf-a8dab2c79a7c)
   )
@@ -5310,6 +5356,10 @@
     (stroke (width 0) (type default))
     (uuid d0a38d59-c565-4358-80db-1a43439edc83)
   )
+  (wire (pts (xy 130.048 286.131) (xy 130.048 285.115))
+    (stroke (width 0) (type default))
+    (uuid d1946658-1741-4b3c-9052-e50497433a56)
+  )
   (wire (pts (xy 484.251 188.468) (xy 487.045 188.468))
     (stroke (width 0) (type default))
     (uuid d1f98c04-9ebb-47f8-a485-0ee63ac5af28)
@@ -5318,7 +5368,7 @@
     (stroke (width 0) (type default))
     (uuid d2533fab-2fca-4f62-9de8-af50a12107a3)
   )
-  (wire (pts (xy 132.588 285.115) (xy 132.588 286.258))
+  (wire (pts (xy 130.048 286.131) (xy 130.048 287.274))
     (stroke (width 0) (type default))
     (uuid d33c2839-7d83-46aa-8277-2f8ce539dff8)
   )
@@ -5496,7 +5546,7 @@
     (stroke (width 0) (type default))
     (uuid eaab1fb8-72e7-4513-9f5d-0f249ad310b6)
   )
-  (wire (pts (xy 334.264 157.861) (xy 331.978 157.861))
+  (wire (pts (xy 334.264 157.861) (xy 333.883 157.861))
     (stroke (width 0) (type default))
     (uuid eaaea46a-96aa-4958-b7bb-0215e7e842d7)
   )
@@ -5537,7 +5587,7 @@
     (stroke (width 0) (type default))
     (uuid f0b29326-8e86-4371-a858-0b7c0d7b1107)
   )
-  (wire (pts (xy 331.978 159.639) (xy 331.978 157.861))
+  (wire (pts (xy 325.247 159.004) (xy 325.247 157.861))
     (stroke (width 0) (type default))
     (uuid f0e575a2-2001-4071-95c5-738f4debfa95)
   )
@@ -5748,6 +5798,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 37e2c6b6-ed35-48ee-b1f4-ca9d8215454d)
   )
+  (text "I2C0\n0x62" (at 43.18 260.604 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 3ad89071-edde-4842-aef5-fa12a5fb98c8)
+  )
   (text "Battery Balancer" (at 590.423 12.446 0)
     (effects (font (size 3.81 3.81)) (justify left bottom))
     (uuid 3afa0110-56d7-4156-8b63-138578f2bbf5)
@@ -5861,6 +5915,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid bfc056ab-4fd0-4439-bba6-70323c5cab1e)
   )
+  (text "I2C0\n0x63" (at -75.311 261.366 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid c394aaf4-482a-4fa1-82db-89394fa3584c)
+  )
   (text "BATTERY CONNECT OPTION 1\nJST-PH\n\nConnect new battery directly"
     (at 319.151 180.721 0)
     (effects (font (size 1.905 1.905)) (justify left bottom))
@@ -5931,6 +5989,10 @@
   (label "DAC1" (at 399.542 188.468 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 1e693808-b936-4199-a353-b6234ccfa004)
+  )
+  (label "D15" (at -64.897 364.363 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid 1f15c56c-d0ce-4bdc-b45e-8efb0e197f3e)
   )
   (label "D08" (at -30.099 151.892 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
@@ -6040,9 +6102,13 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 6134ed11-6fdc-4a77-bdf9-1fef175955d9)
   )
-  (label "A00" (at 33.401 319.405 0) (fields_autoplaced)
+  (label "A02" (at 33.401 319.405 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 617c538d-a8b5-4b9a-9198-cf82a3f8ed1e)
+  )
+  (label "D15" (at 116.205 122.301 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid 64316307-b9c0-428a-8a95-6cf3e5440d32)
   )
   (label "D11" (at 412.115 175.768 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -6056,7 +6122,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 6a8e981e-fd85-4dec-8a6b-0121a9d39131)
   )
-  (label "A01" (at 556.895 171.069 0) (fields_autoplaced)
+  (label "A00" (at 556.895 171.069 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 6b3c0911-2e7e-41ae-97c2-16b87f79a435)
   )
@@ -6124,7 +6190,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 91ce1616-fba4-46ef-a7d0-e7581aef5966)
   )
-  (label "USB_HOSTEN" (at 116.205 107.061 180) (fields_autoplaced)
+  (label "D14" (at 116.205 107.061 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 95805c1c-76c4-4ecc-bf08-8a90b5658e67)
   )
@@ -6268,6 +6334,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid f27a734f-da91-47e6-a316-28e748528580)
   )
+  (label "D14" (at 62.611 364.998 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid f4f2dca1-b6bb-47bb-a51e-78e34b595811)
+  )
   (label "A03" (at 116.205 137.541 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid fdd0c8e3-f9bb-453e-946e-6c8530ff2f0a)
@@ -6347,10 +6417,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "BATT_SENS_2" (shape input) (at 608.838 81.534 180) (fields_autoplaced)
+  (global_label "BATT_SENS_2" (shape input) (at 605.155 81.534 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 6d8ba07c-c605-47f7-a8b7-a9a64dbad6cb)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 593.5952 81.534 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 589.9122 81.534 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -6433,26 +6503,26 @@
     (property "Datasheet" "~" (at 188.595 306.451 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bff186bf-8995-48b1-9a6c-1cb54c2b9d00))
-    (pin "10" (uuid ecd9f43f-c6fd-4738-9c5c-dcc837519d2b))
-    (pin "11" (uuid 3b6ae637-73d0-432c-91da-b6d3c2a94baa))
-    (pin "12" (uuid 4b3f31e5-f6da-4088-98d2-11a127a69127))
-    (pin "13" (uuid df6e2ecd-f209-4088-b192-237c69ae78f4))
-    (pin "14" (uuid 3bef3e3e-60ea-4c66-8df9-42de2648b585))
-    (pin "15" (uuid 5195c3f1-2973-4265-9687-617334606893))
-    (pin "16" (uuid 83054877-072b-43c0-96f5-350b9084c913))
-    (pin "17" (uuid a8d592f9-fa70-43c1-aa79-d347a0e8a99f))
-    (pin "18" (uuid c98c300b-c569-44c2-bf43-d143a812d325))
-    (pin "19" (uuid 2d63de11-0749-49ab-ba3f-f116310309bc))
-    (pin "2" (uuid e051fe5b-a937-4d1e-b247-dff11f939207))
-    (pin "20" (uuid 24779afd-212d-4ca0-8c38-81fac736bdf0))
-    (pin "3" (uuid 10ef7091-3d97-42de-b87d-841077344d42))
-    (pin "4" (uuid 62eeb68f-3fd8-476a-9fad-35efd8950206))
-    (pin "5" (uuid 1442bb7e-b25c-4ebb-9359-b85989da4418))
-    (pin "6" (uuid 7f9f8ed7-2e08-450c-8023-294c68849b90))
-    (pin "7" (uuid e7de4154-f438-41ea-ae96-1df640fc7dc7))
-    (pin "8" (uuid 28734570-ce63-45cc-bebc-27415ec023b0))
-    (pin "9" (uuid a2134576-28ef-4007-80eb-0b18332e1e64))
+    (pin "1" (uuid 7add118f-10b9-4e73-835c-e9bc1062cbcf))
+    (pin "10" (uuid 844caf21-4658-4ccc-a20e-b2025a88e94e))
+    (pin "11" (uuid 964ac425-e555-405d-86a0-2ee938bd7d4d))
+    (pin "12" (uuid 5312ee56-d6b6-466e-86c7-c4e1040db4b1))
+    (pin "13" (uuid 0c72c8e3-4638-4886-8696-b84dc5a73ffc))
+    (pin "14" (uuid 8a0afa98-4f6d-4dfe-aff6-f01bbd25d23c))
+    (pin "15" (uuid 90874c75-d3ae-4cf1-ac2c-a836bc9c58c1))
+    (pin "16" (uuid b675ab58-809b-486e-a00c-5ab5c4f7e25b))
+    (pin "17" (uuid 6a908dc3-f8a8-4629-98ac-beb3dd8c099a))
+    (pin "18" (uuid 7cc3c185-a64c-4151-abb0-8c08a5e27f3f))
+    (pin "19" (uuid f2c6ca48-2d9f-424e-b4d4-07c1efc78b87))
+    (pin "2" (uuid 3259738a-8f61-4bb3-ab49-16f528236e6d))
+    (pin "20" (uuid 7c7b5c7c-b7bd-48ee-a9d2-9858962152ae))
+    (pin "3" (uuid ff2e569d-3722-471f-8cd7-7208117001c4))
+    (pin "4" (uuid 531d24d3-ffb1-48b2-8299-fe233be91961))
+    (pin "5" (uuid 64b0ccf2-cea2-4a21-aa2d-04a9ba6bd328))
+    (pin "6" (uuid 1c4cea6e-712a-4a3d-b4f0-106f378c52df))
+    (pin "7" (uuid be630407-61c4-4073-ac6b-f9fdef9095a3))
+    (pin "8" (uuid 9cfd415b-3537-4cc8-9b72-5600fa1b2773))
+    (pin "9" (uuid 0d473c01-dee4-4984-bae0-85605ea1bf94))
     (instances
       (project "mainboard"
         (path "/1aa2047c-1463-47dc-8fa9-594d0cbf3c24"
@@ -6482,7 +6552,7 @@
     (property "Datasheet" "" (at 228.6 85.217 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 22f24963-0ed7-4828-ba2f-60df5dfedb89))
+    (pin "1" (uuid a32c7809-a686-4497-a2f3-a325355e7134))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -6537,8 +6607,8 @@
     (property "Datasheet" "~" (at 237.236 76.581 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 16ba2dfb-fe8b-4b14-be0e-fc2e6d22bccc))
-    (pin "2" (uuid 284f17c3-7721-4605-aca5-0ab6a359a4fe))
+    (pin "1" (uuid 4eeeebab-b11b-4fc2-a5dc-ef55370c5643))
+    (pin "2" (uuid bc1bb07a-69d2-49f9-83fb-1e0e41dc52c0))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -6663,7 +6733,7 @@
     (property "Datasheet" "" (at -49.784 180.848 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 60d96e28-a0a6-49c8-b284-f0ae4832ee76))
+    (pin "1" (uuid e8f0430d-2b16-4a2f-9198-82b67fba5adf))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -6734,8 +6804,8 @@
     (property "Datasheet" "~" (at -51.308 141.986 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 60191bff-e552-4f14-a169-8bbd9cc5c73a))
-    (pin "2" (uuid 92ed7f04-415f-489f-aa4d-a0d93d122940))
+    (pin "1" (uuid b5f73204-6637-43b0-b28a-b7096e3709a5))
+    (pin "2" (uuid 34c2ae83-bdb9-466f-88fd-9c3adfcb7596))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -6760,8 +6830,8 @@
     (property "Datasheet" "~" (at 41.148 364.998 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3fa47b7c-d33e-4383-8c83-2242d5aba55a))
-    (pin "2" (uuid 7ab578db-8580-4f05-a162-2ed4774b3cbf))
+    (pin "1" (uuid 9be374c7-1f2d-450a-803d-f67f67e13068))
+    (pin "2" (uuid 9d950951-753a-4528-8493-d80b64cdee08))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -6786,12 +6856,37 @@
     (property "Datasheet" "~" (at -51.181 132.969 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bbfa30a0-fd00-4b48-b498-e15e0986e25c))
-    (pin "2" (uuid 5a6ee13f-f976-4678-9397-7c236687d0e8))
+    (pin "1" (uuid 0e7ff41c-7b22-4f02-ad40-a5641220acce))
+    (pin "2" (uuid 371d6715-8235-420b-b782-970386890c2e))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
           (reference "R35") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 333.883 155.321 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 08516eb1-9051-4a47-abf8-65ce183653fd)
+    (property "Reference" "TP6" (at 335.153 149.86 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "BATT_SENS" (at 335.026 152.019 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 338.963 155.321 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 338.963 155.321 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 7bc472b5-0bc5-488e-8d1d-470bc1aa8ff6))
+    (instances
+      (project "Battery Tester"
+        (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
+          (reference "TP6") (unit 1)
         )
       )
     )
@@ -6812,8 +6907,8 @@
     (property "Datasheet" "~" (at 49.403 364.998 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 68fc313a-7683-45a1-aef9-0a9d47d4babe))
-    (pin "2" (uuid 1506c2b0-c7c3-488c-8cc5-eb4f97e6e0bd))
+    (pin "1" (uuid 7a33b68e-e708-4b73-a100-0be742d353ca))
+    (pin "2" (uuid 1653252c-419c-47bd-9ca8-e1bc804341b2))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -6838,7 +6933,7 @@
     (property "Datasheet" "" (at 139.319 91.567 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c8b0bc7a-0de7-4112-85f0-4403988427ad))
+    (pin "1" (uuid 8b409370-9325-4b82-b1ba-6d7b3130b682))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -6868,8 +6963,8 @@
     (property "Datasheet" "~" (at -45.085 83.947 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f36a687b-00a5-43f4-8859-3da897b368e3))
-    (pin "2" (uuid 170266eb-1d7d-4187-a5b6-28ad1eb828b8))
+    (pin "1" (uuid e33b5f48-f9ce-401d-80f9-5a506d0e1d61))
+    (pin "2" (uuid d24423d6-2ed6-427c-bc03-4b47d0d06329))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -6894,11 +6989,11 @@
     (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv9001.pdf" (at -58.928 320.421 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6343b969-eaa1-40e8-849a-b90bff5d81c2))
-    (pin "2" (uuid 554b5e19-d2ff-4ced-9819-a95d157bf941))
-    (pin "3" (uuid 31b8cb91-14bc-49c0-8e9c-3d2056451938))
-    (pin "4" (uuid dcfaa1cb-09bf-4ed1-bdde-d9336c2b5d09))
-    (pin "5" (uuid f5ede28d-61ff-49d9-b146-407d355c4437))
+    (pin "1" (uuid 26d95de2-381b-4d4e-a42e-a8be8c57363d))
+    (pin "2" (uuid 4efc3a08-1c2f-49e1-a34c-146f381a1869))
+    (pin "3" (uuid a84eafb5-57fc-463e-9ee1-6982dd07c8d1))
+    (pin "4" (uuid c175883b-9e59-459b-ab8d-595c7a5bc4bf))
+    (pin "5" (uuid f2c65954-9dc1-44ee-9375-22972349fdf3))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -6923,7 +7018,7 @@
     (property "Datasheet" "" (at 177.038 298.831 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 63b10f80-e5a0-49a5-b57a-20b969f2a9e0))
+    (pin "1" (uuid 217da3f8-aa78-44f1-bb78-e8a5969de16d))
     (instances
       (project "mainboard"
         (path "/1aa2047c-1463-47dc-8fa9-594d0cbf3c24"
@@ -6953,8 +7048,8 @@
     (property "Datasheet" "~" (at -45.212 60.452 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3c4b0d8a-d437-4e33-81a3-8d022a56a6eb))
-    (pin "2" (uuid 298ca397-860a-4a41-880d-aecdcdeb277c))
+    (pin "1" (uuid ed295f23-cc29-4493-8089-c3579ced6c80))
+    (pin "2" (uuid c6317540-d4d5-4a4a-af18-aca951edcf80))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -7009,7 +7104,7 @@
     (property "Datasheet" "" (at -44.958 346.837 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5e6d9583-eab5-4d25-b06d-1c2d91a3f59a))
+    (pin "1" (uuid 0261a67a-1191-48ba-a4a7-d9e4bd291330))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -7039,7 +7134,7 @@
     (property "Datasheet" "" (at 147.955 162.433 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f1bed8ef-8aba-46fe-80b3-0000fa746f2e))
+    (pin "1" (uuid 5a50f849-dd0a-4a02-865e-7957e57a368a))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -7054,19 +7149,19 @@
     )
   )
 
-  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 331.978 159.639 0) (unit 1)
+  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 325.247 159.004 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0dcc7c9c-3ea6-4b3f-bccb-8abbdc75d20c)
-    (property "Reference" "#PWR0138" (at 331.978 165.989 0)
+    (property "Reference" "#PWR0138" (at 325.247 165.354 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 331.978 163.195 0)
+    (property "Value" "GND" (at 325.247 162.56 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 331.978 159.639 0)
+    (property "Footprint" "" (at 325.247 159.004 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 331.978 159.639 0)
+    (property "Datasheet" "" (at 325.247 159.004 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid efc448bb-c6ab-43be-8a03-4e6e8ba7c77f))
@@ -7125,8 +7220,8 @@
     (property "Datasheet" "~" (at -49.784 186.309 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e67d50bb-d571-4291-b95c-84d73d5c753d))
-    (pin "2" (uuid 74bc9d18-809f-4566-875d-fdd99028a57b))
+    (pin "1" (uuid 9692a581-9f42-4976-8fb1-41b8d71cb264))
+    (pin "2" (uuid 546da6ef-6516-4768-8422-6f32a2863ffb))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -7156,8 +7251,8 @@
     (property "Datasheet" "~" (at 233.299 47.244 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a125de84-f3f7-43b3-8f51-68ae8230707c))
-    (pin "2" (uuid 03d792fe-63ee-46f7-b1fb-db18d5067b6a))
+    (pin "1" (uuid 953e65fe-2297-4d9e-86c9-43ffcf259e23))
+    (pin "2" (uuid 9b09bcfa-8883-4347-bea7-8e7a55f8b07b))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -7273,8 +7368,8 @@
     (property "Datasheet" "~" (at 100.711 37.592 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 07fac8d0-79a5-4a3f-b035-24f9e068d8f0))
-    (pin "2" (uuid e8f6abcd-cb70-436c-906f-0f3dfd65c1d4))
+    (pin "1" (uuid b2952fce-c622-4ca4-be89-82e1eec5d28a))
+    (pin "2" (uuid 946652d3-b928-401e-ac40-c8178968e042))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -7334,7 +7429,7 @@
     (property "Datasheet" "" (at 24.257 60.833 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 78459fc0-229c-4969-af3b-f2a3788aca68))
+    (pin "1" (uuid 4482aa80-01cc-4a36-bed2-7415d37d3429))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -7364,7 +7459,7 @@
     (property "Datasheet" "~" (at 202.692 306.451 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 52c3a615-894a-46c1-80ae-fbebaa55697e))
+    (pin "1" (uuid 4b7806a8-8f6f-4656-bf78-09996f0e4250))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -7415,8 +7510,8 @@
     (property "Datasheet" "~" (at 262.128 81.407 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 26fd383b-0ec1-480f-b87d-303eb10bcc89))
-    (pin "2" (uuid dd968698-cdcd-4e48-adc7-b3ba38f15f13))
+    (pin "1" (uuid 1316aaae-e802-4244-8180-a45508c3f16d))
+    (pin "2" (uuid 3552bff1-b776-47e7-a650-8021cffd6035))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -7446,12 +7541,12 @@
     (property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/22039d.pdf" (at 50.927 268.478 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 637fc0f1-8de8-412e-a83c-cb2af93ef2b9))
-    (pin "2" (uuid 1b40495e-a5af-4dcc-9de1-26890bdd4cdc))
-    (pin "3" (uuid 7b3420eb-769a-4231-a735-7e311e986efd))
-    (pin "4" (uuid 42589475-f726-4b8a-a894-91e38c67094d))
-    (pin "5" (uuid 4770ba93-b7d2-4afa-985f-d56b8aec2a88))
-    (pin "6" (uuid 537cd240-232c-4fe8-ac3f-49ca4cf56276))
+    (pin "1" (uuid 34e7e59c-5914-46d4-ab3c-77cc16c2ebb7))
+    (pin "2" (uuid 0e09329b-be63-4b13-9af5-4575c88f70d0))
+    (pin "3" (uuid 342025ea-6358-45e2-948a-1b60f95439bd))
+    (pin "4" (uuid 50ca7e10-b83c-45b1-a77f-a3cef9ee606f))
+    (pin "5" (uuid 0b0e598f-3373-42f8-922d-abacf58ffd49))
+    (pin "6" (uuid 99bf0070-258d-43fd-b6c4-85d22583d098))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -7476,8 +7571,8 @@
     (property "Datasheet" "~" (at 80.391 37.592 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c895e49c-2951-4743-b64f-445e98e87eed))
-    (pin "2" (uuid 9861cda3-bd85-45f7-9ffa-a36c91119481))
+    (pin "1" (uuid a47a0bd4-f3f1-4d31-9e76-e0c9fb6548db))
+    (pin "2" (uuid 3c393ff1-791d-4c11-a1de-2445f1e72cd6))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -7507,8 +7602,8 @@
     (property "Datasheet" "~" (at -58.928 192.659 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3f1e233a-72eb-49c4-b7ae-8474f286e4f1))
-    (pin "2" (uuid 17ceff28-a94e-43aa-b063-51ca8a25578e))
+    (pin "1" (uuid 1e2f433e-a812-4335-ad6e-f7b1bb36978e))
+    (pin "2" (uuid d45e5838-45f6-48d8-93a6-b15e126a577b))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -7572,6 +7667,56 @@
     )
   )
 
+  (symbol (lib_id "Connector:TestPoint") (at 609.092 84.074 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 242af781-8f1b-4a46-8e06-ee40bcb39371)
+    (property "Reference" "TP9" (at 614.172 87.503 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "GND" (at 614.426 89.535 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 604.012 84.074 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 604.012 84.074 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e0fe6195-a74d-4f06-ae08-4f74d7f490ca))
+    (instances
+      (project "Battery Tester"
+        (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
+          (reference "TP9") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 609.092 81.534 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 25acf670-459d-439b-bb8d-1a02f1b30130)
+    (property "Reference" "TP8" (at 610.362 76.073 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "BATT_SENS_2" (at 610.235 78.232 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 614.172 81.534 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 614.172 81.534 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 3b38fad3-46ee-4ac0-90f3-0165cde7d2da))
+    (instances
+      (project "Battery Tester"
+        (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
+          (reference "TP8") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 58.928 327.914 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 275ba6ae-c19d-4506-8c26-d01fa3b6d7bc)
@@ -7587,7 +7732,7 @@
     (property "Datasheet" "" (at 58.928 327.914 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0275da6d-4389-4b61-87c1-3130ca2ff99b))
+    (pin "1" (uuid 9fffc528-c13c-4fd1-9d28-8fa3d4191993))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -7617,7 +7762,7 @@
     (property "Datasheet" "" (at -58.166 98.425 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 249c9a9b-8d4a-4446-814c-29fc92c2ec00))
+    (pin "1" (uuid 1bbe5fe9-af23-4132-8f9d-90d9e2413bc2))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -7673,8 +7818,8 @@
     (property "Datasheet" "~" (at 110.49 58.801 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c84845c7-a6e3-4a24-98a8-10adc7b5e622))
-    (pin "2" (uuid 96a82aa0-8c22-478f-bc04-3ae095bc0bc0))
+    (pin "1" (uuid ab270762-e241-4e61-831f-2186e6a8758a))
+    (pin "2" (uuid 7adf9ee5-225a-4628-b832-3b9b03861cac))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -7704,7 +7849,7 @@
     (property "Datasheet" "" (at 228.6 72.263 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 75c7dc48-8a18-4eaf-b2a5-58f5ed057d17))
+    (pin "1" (uuid 54543d51-0030-4be0-a474-522df30942f0))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -7734,7 +7879,7 @@
     (property "Datasheet" "" (at 147.955 180.975 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c9ed84bf-e127-41c4-b14d-7c5b57818621))
+    (pin "1" (uuid b7632321-51e3-49e0-89ca-492a69da1c87))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -7877,7 +8022,7 @@
     (property "Datasheet" "" (at 191.008 78.486 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3d4e9076-44dd-45df-8c2b-1cb38732596e))
+    (pin "1" (uuid cbef128f-65ed-46d8-9f6a-69567c19b31e))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -7907,7 +8052,7 @@
     (property "Datasheet" "" (at 106.045 50.927 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4ec24e65-47e2-452c-aaf3-7422fcbef065))
+    (pin "1" (uuid d8414eeb-2cac-49a7-a287-4c899017ceb3))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -7937,7 +8082,7 @@
     (property "Datasheet" "~" (at 202.692 308.991 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 34fd0b9c-483c-4b39-b5b0-10021eee20f9))
+    (pin "1" (uuid 478f998b-afc3-472e-8651-94708b2a0192))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -7962,8 +8107,8 @@
     (property "Datasheet" "~" (at 58.928 336.804 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 28986701-a756-4362-9c28-06d7b66d2cee))
-    (pin "2" (uuid a5afea32-6a8c-440b-95db-cf8c795d704f))
+    (pin "1" (uuid f00716cc-edf4-4952-883d-5cba461057c6))
+    (pin "2" (uuid 910ec4b7-033f-4304-94f2-4725905e399a))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -8054,8 +8199,8 @@
     (property "Datasheet" "~" (at 32.004 54.483 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5423130a-1803-4731-b0af-a2ead439fea4))
-    (pin "2" (uuid 35db5890-1bb5-49fb-bd4d-78901fa8b193))
+    (pin "1" (uuid 6ca1ca23-fee0-4a0c-a41f-efe8a9d05089))
+    (pin "2" (uuid ef6ce7af-8150-4556-a3b1-99e5282dd031))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -8080,7 +8225,7 @@
     (property "Datasheet" "" (at -58.928 311.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bf25177c-3a13-4221-b1f1-6ebaf7ae10ce))
+    (pin "1" (uuid 2b17eac9-49ab-465a-a6cb-0c7dd110525c))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -8170,7 +8315,7 @@
     (property "Datasheet" "" (at -91.948 270.129 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 97583b23-e24c-4eaf-8106-42f05243b3f3))
+    (pin "1" (uuid 530e7e3a-60ed-4bf5-ad23-1b77dcf606c5))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -8200,8 +8345,8 @@
     (property "Datasheet" "~" (at -16.764 282.448 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f9da3948-960f-4a75-b587-b03c2dbb3d2c))
-    (pin "2" (uuid 531465fe-8d45-4bd7-9ebf-e5b64a6b31ef))
+    (pin "1" (uuid 716732f8-ff76-4b9c-b151-f5b8689eb54c))
+    (pin "2" (uuid 5c0b6df4-e090-43dc-a707-f76217ad75ab))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -8231,8 +8376,8 @@
     (property "Datasheet" "~" (at 198.247 98.044 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ca531e49-889c-4b0c-861b-3041e87d9725))
-    (pin "2" (uuid 4ea0b1cc-0e4c-4dbf-ab65-1132899f79a5))
+    (pin "1" (uuid 0727eeb0-4396-4ae3-9168-01fb9086bef7))
+    (pin "2" (uuid df51228e-e63c-4e48-84a6-99df55d429e6))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -8262,8 +8407,8 @@
     (property "Datasheet" "~" (at 258.191 141.224 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 231d8781-423e-4284-bc9b-dca610057cb3))
-    (pin "2" (uuid f4fc33fa-cc16-465d-a8c3-53f08faf3e47))
+    (pin "1" (uuid a8ef04a7-a75c-483e-899a-742c1b654c4c))
+    (pin "2" (uuid b23bd133-a98b-403c-aff1-3e73516cc32d))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -8293,7 +8438,7 @@
     (property "Datasheet" "" (at 114.427 56.896 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid fd71fa66-126c-4ca2-8ac4-2589db9b19a8))
+    (pin "1" (uuid 8c972be7-b017-4e4a-b0c8-3c67689348c7))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -8323,7 +8468,7 @@
     (property "Datasheet" "" (at 86.36 272.161 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6d3a7a33-fd4a-4730-a436-6c532f3c01f1))
+    (pin "1" (uuid be7f5a5a-2a13-4731-86c3-9de1dfbc2330))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -8353,8 +8498,8 @@
     (property "Datasheet" "~" (at 144.78 117.856 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d7a07bb8-4c05-458f-bb09-b50eb85b7cc8))
-    (pin "2" (uuid e92f2af4-6736-49b6-86de-c554fdf469bf))
+    (pin "1" (uuid 745b2250-e4af-4c89-924e-4bc2ddbfb2a1))
+    (pin "2" (uuid 4a372704-6e25-4d06-8e88-f7cb3ac3af0c))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -8409,7 +8554,7 @@
     (property "Datasheet" "" (at 144.78 113.411 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 48d28f04-fd98-4e25-9644-eebce05915b3))
+    (pin "1" (uuid 38ffa0f6-8a97-444b-a149-9f4bd71798b8))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -8469,7 +8614,7 @@
     (property "Datasheet" "" (at 139.192 113.411 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid fb1ac948-363d-47fd-8fb4-6e489543fdcf))
+    (pin "1" (uuid c5640445-15ff-49a2-9bec-4a9e59e7c62b))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -8499,8 +8644,8 @@
     (property "Datasheet" "~" (at 228.6 81.407 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 39320db2-74bb-47ad-89cf-c01a9c7dfe2b))
-    (pin "2" (uuid e4417599-fa1f-4239-a3e3-8dd2af6fbd95))
+    (pin "1" (uuid a1902ec1-deaf-4135-ab0e-2523339321e2))
+    (pin "2" (uuid 07da480a-ef37-42d8-96e3-15b8d7f37b9f))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -8561,8 +8706,8 @@
     (property "Datasheet" "~" (at 72.898 341.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5fbb2254-2e61-4e5b-8e63-d513dc688209))
-    (pin "2" (uuid 549b097d-f783-4b46-8c82-5fb4c4ef37fe))
+    (pin "1" (uuid 341295cb-3f05-4454-9ab4-1268b701ac3c))
+    (pin "2" (uuid 3d4dc993-d154-43af-941c-e8056cdea3d1))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -8592,7 +8737,7 @@
     (property "Datasheet" "" (at 65.659 262.001 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid dd460d23-6092-42b8-a1ac-9773ac842cb3))
+    (pin "1" (uuid 79189bc8-0263-4921-8134-bfdbd1a89474))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -8622,7 +8767,7 @@
     (property "Datasheet" "" (at -32.131 67.945 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3bea6df4-8619-486f-92ce-25c69817d9ef))
+    (pin "1" (uuid 0efda109-e2ea-4129-bbcc-71194e00e8fb))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -8652,7 +8797,7 @@
     (property "Datasheet" "" (at 112.141 315.341 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2ea1594d-f7cb-487f-bc94-614c60453f10))
+    (pin "1" (uuid 8f884deb-d70b-4b01-86fb-887380e5b604))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -8682,8 +8827,8 @@
     (property "Datasheet" "~" (at -86.36 364.363 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid fc34a3b0-d483-4373-b6be-90a95a7c5f5a))
-    (pin "2" (uuid 22b28cfd-1982-491d-b666-5ee1dffdbc97))
+    (pin "1" (uuid fba42300-2889-4ee0-ad28-d649893b8500))
+    (pin "2" (uuid 9b25a29c-4678-4926-b82d-ed01885fea67))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -8708,7 +8853,7 @@
     (property "Datasheet" "" (at 122.047 32.512 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 19a20a05-46e8-460b-b31d-b570905b2758))
+    (pin "1" (uuid ef6788eb-8974-40e7-a53e-7f171b389ebe))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -8794,8 +8939,8 @@
     (property "Datasheet" "~" (at -32.385 307.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a16365c7-5b8f-4a91-b313-b248e9657de1))
-    (pin "2" (uuid 87301b8b-62f3-476e-939d-cbe327f00d30))
+    (pin "1" (uuid e9d52961-1564-4c46-97eb-b0eb84f953e2))
+    (pin "2" (uuid 90315b36-c6da-4434-8800-84a1eb563694))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -8825,7 +8970,7 @@
     (property "Datasheet" "" (at 212.344 99.822 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d599595a-69c1-4d99-8b81-841ad2c70ea5))
+    (pin "1" (uuid d5037f87-3030-4526-920b-1c159097cdc1))
     (instances
       (project "mainboard"
         (path "/1aa2047c-1463-47dc-8fa9-594d0cbf3c24"
@@ -8915,11 +9060,11 @@
     (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv9001.pdf" (at 58.928 319.405 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 585cc679-8196-4c7c-8668-5780b505bf9e))
-    (pin "2" (uuid 530512ef-bbe2-4f17-9461-58689a16cf8e))
-    (pin "3" (uuid ae912ea9-cad7-4bb2-953e-199c1aa33458))
-    (pin "4" (uuid cd2e2445-021f-4768-b73d-99edc197f117))
-    (pin "5" (uuid ee8c7a2b-381c-4a7e-ba82-d34158c2a0e6))
+    (pin "1" (uuid c25e290c-bcb5-4144-90aa-1f61e2fc57f2))
+    (pin "2" (uuid e371e313-586b-4ef7-9cb3-97d2782e0cba))
+    (pin "3" (uuid f0d158be-51f5-4c46-9ccc-0840f7055406))
+    (pin "4" (uuid c8cf553e-b5f6-4517-8706-d3abe86716d4))
+    (pin "5" (uuid ff27d8f4-73ad-4fa9-9a74-84eb30a33042))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -8944,7 +9089,7 @@
     (property "Datasheet" "" (at -32.004 115.189 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8967b0ae-18f3-4a46-ae89-13431cfce4c8))
+    (pin "1" (uuid 636bd5af-d9c3-41f3-aaf9-f79ff809436b))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -9056,7 +9201,7 @@
     (property "Datasheet" "" (at 106.172 149.733 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 01022114-09e0-4d26-a662-3cddeaa37185))
+    (pin "1" (uuid c0c74586-fc5f-4f88-8107-4dfe141448aa))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -9086,8 +9231,8 @@
     (property "Datasheet" "~" (at 40.005 94.361 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0d2f9d21-25ad-4003-aa9c-9a7fab437b3c))
-    (pin "2" (uuid 8b9df89a-626f-4ae6-85a2-fc39a48c2814))
+    (pin "1" (uuid 5c4aac26-eb4b-46f4-888e-5f776adedc01))
+    (pin "2" (uuid cf41573a-06dd-40d8-b8d9-532634bc1e19))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -9147,8 +9292,8 @@
     (property "Datasheet" "~" (at 106.045 54.483 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bfe1dbce-a4e1-4d13-875a-99aa81497756))
-    (pin "2" (uuid 58a9fb93-06b2-4832-a265-c87d30e1474c))
+    (pin "1" (uuid 82898f16-c418-4172-b49a-a06a8adafa7a))
+    (pin "2" (uuid 5c07e580-c94d-4041-9b19-58a316a21620))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -9204,8 +9349,8 @@
     (property "Datasheet" "~" (at -58.293 55.626 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9e6c6874-4e3d-4dae-af15-3d42917d89ea))
-    (pin "2" (uuid 530d602c-2d5a-41c0-90e4-0eb074adbc0a))
+    (pin "1" (uuid 626ef031-0073-49b9-82c2-f0ba3d9aa6ca))
+    (pin "2" (uuid a629cc09-3151-4d8e-929b-5e8d29ad6d85))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -9256,7 +9401,7 @@
     (property "Datasheet" "" (at 169.164 83.693 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6fde3d74-5f5a-497c-ad0f-8b857a596e13))
+    (pin "1" (uuid d77d4042-cd31-410e-bcb8-a0fef5ec41b2))
     (instances
       (project "mainboard"
         (path "/1aa2047c-1463-47dc-8fa9-594d0cbf3c24"
@@ -9286,7 +9431,7 @@
     (property "Datasheet" "" (at -59.055 165.354 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid eb983b9f-2a1c-4bca-8760-ef547b843567))
+    (pin "1" (uuid 770c83e1-555a-4bbb-b849-741c24a75ff3))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -9316,8 +9461,8 @@
     (property "Datasheet" "~" (at 174.498 134.239 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid cc81e83f-053f-40f2-92b8-b0e6b4395a98))
-    (pin "2" (uuid 36519935-b06f-45f2-b46a-297a515c2896))
+    (pin "1" (uuid 0caf0e80-7186-4773-823f-2d4007f79401))
+    (pin "2" (uuid 4a9993c7-ee75-40ea-8c13-18b85ec59b77))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -9377,8 +9522,8 @@
     (property "Datasheet" "~" (at 114.046 311.277 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d88f49ff-7d65-4a1a-9635-3347377ac908))
-    (pin "2" (uuid 56504d72-fe61-47b5-86f0-60e40ac735fd))
+    (pin "1" (uuid 00057860-ccc0-40ad-b70e-b61051946113))
+    (pin "2" (uuid a619f5e6-a707-4ec4-b8b2-a1220813c029))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -9438,7 +9583,7 @@
     (property "Datasheet" "" (at 72.898 345.821 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 780bff35-f45e-4070-9682-ffc8351e0d15))
+    (pin "1" (uuid 107d28e0-679e-4c5f-9106-e7659722bd6b))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -9498,8 +9643,8 @@
     (property "Datasheet" "~" (at 110.109 311.277 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c77e08f7-78e8-451d-81e9-5aed42ac66af))
-    (pin "2" (uuid 07ec9371-58a2-4076-bfff-b2e1ce2e38b3))
+    (pin "1" (uuid edf904e1-04b2-4f27-8c3e-8e0867aebcac))
+    (pin "2" (uuid 8099f5bd-4c3a-4ace-a272-048384dc5a0f))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -9529,7 +9674,7 @@
     (property "Datasheet" "" (at 144.907 91.567 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e273d174-4f35-413b-afa3-a146c4a82896))
+    (pin "1" (uuid caef8d55-71aa-46b3-a3e8-c91d23c55e02))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -9559,8 +9704,8 @@
     (property "Datasheet" "~" (at -51.689 161.798 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f9c9f10c-7d82-4df1-b252-8e39e420a7d5))
-    (pin "2" (uuid f1c8052b-6f61-4327-9082-6a67c73e0d43))
+    (pin "1" (uuid 438e0ebf-99b7-4ffd-9442-2dbd36060da8))
+    (pin "2" (uuid 056a0741-0659-42a6-962b-ddbb8e4fea47))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -9585,7 +9730,7 @@
     (property "Datasheet" "" (at 58.928 310.134 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8684bff6-4bdf-4a7f-9f01-e5cbaf0f2534))
+    (pin "1" (uuid 0f33385a-aa1f-492d-9b8f-0ef420283277))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -9615,7 +9760,7 @@
     (property "Datasheet" "" (at 50.673 69.596 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f650f45f-8d1a-41aa-8f29-46dec0ceebcb))
+    (pin "1" (uuid c26b94fd-3781-4bca-818d-5d505e7001a5))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -9645,8 +9790,8 @@
     (property "Datasheet" "~" (at 90.551 37.592 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b5bc2af2-79d9-47ff-a2db-25713dd374e6))
-    (pin "2" (uuid 7f0d6f4c-1114-4d2b-9fae-256d058234e5))
+    (pin "1" (uuid b7ba6d04-ad89-46a1-bd01-645cc3e587e9))
+    (pin "2" (uuid 58af1146-9c18-4993-8ab8-afbdbf1178fb))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -9706,8 +9851,8 @@
     (property "Datasheet" "~" (at 106.172 311.277 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 01a15f6a-0aac-435b-a9a4-e8121c14ee0a))
-    (pin "2" (uuid 87b803cf-7dc3-4cf7-adb2-f26d32d22e25))
+    (pin "1" (uuid 6344ee9e-2577-4d4e-8be4-f3f785d89399))
+    (pin "2" (uuid 4b569dbc-60a5-4c3c-9da1-e1ff911715ca))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -9737,23 +9882,23 @@
     (property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" (at 180.594 49.657 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "A1" (uuid 00164dce-2ec7-4c50-936d-9e2f52ec5fc9))
-    (pin "A12" (uuid 17f44c50-1ab1-487b-ac7d-8cc354ae6b8c))
-    (pin "A4" (uuid 16a9fc75-9a01-40c9-b90a-19638ee65990))
-    (pin "A5" (uuid 0d6d05c2-4aee-4270-9085-ad4e3de644eb))
-    (pin "A6" (uuid df668cbd-3817-4e58-83cb-8b036b17cea2))
-    (pin "A7" (uuid 124e5226-877e-4410-a3df-0b1ed97ea88e))
-    (pin "A8" (uuid 30fb2fa0-360f-466e-890a-90151e5544f2))
-    (pin "A9" (uuid 6dd334ae-7349-4dab-967d-10aecbd47bdf))
-    (pin "B1" (uuid a24f513a-42d3-4495-825d-f043b074b94c))
-    (pin "B12" (uuid b571b44a-b947-431c-8012-4e3a92ac3dbc))
-    (pin "B4" (uuid 5b3ddd2b-2fd4-4166-a1f0-4724ca7ed018))
-    (pin "B5" (uuid becb179e-4247-4e6c-a8d7-b1b74dc3d9be))
-    (pin "B6" (uuid bace5d4a-8455-4c5a-8230-06a734b14e29))
-    (pin "B7" (uuid c5a0d58f-b30a-4243-b8e2-18daa8d5e0df))
-    (pin "B8" (uuid 79bb22cb-5068-426a-9391-5027c51491bd))
-    (pin "B9" (uuid 65ab274d-6172-4996-8dce-b8276c708867))
-    (pin "S1" (uuid dbab4a7e-3664-40be-b309-c59364992c82))
+    (pin "A1" (uuid 30f6ed3f-d822-48b8-aa1e-f5531b162622))
+    (pin "A12" (uuid 83b143b6-7cc7-48bc-b634-8051a08ca6d2))
+    (pin "A4" (uuid 6dde1890-2243-4407-94d0-807a4a955cae))
+    (pin "A5" (uuid 78aa4e54-b404-4cdd-902e-1c0c0c58cb87))
+    (pin "A6" (uuid a1110dca-c1c1-46f8-9d46-9a9978cb14d5))
+    (pin "A7" (uuid a654e9fe-6a93-45cb-964b-a2bb6272b8dd))
+    (pin "A8" (uuid 4fbd9b9d-b545-4a5c-af7d-eb68f40a958b))
+    (pin "A9" (uuid 39666c03-58a6-4dcc-b732-229a02030ce5))
+    (pin "B1" (uuid b2daa58b-1db3-4860-a924-35485034a2ec))
+    (pin "B12" (uuid 36ee7af8-e009-42d7-94e7-8820ded937f6))
+    (pin "B4" (uuid 47754bfe-686d-4692-8690-4f9084272c2f))
+    (pin "B5" (uuid ab2bba7b-2d62-48f4-9c27-7c9fb29ae1f4))
+    (pin "B6" (uuid 966fbfcd-f76f-481d-adad-4759b1292a6c))
+    (pin "B7" (uuid 2356de9d-7ec6-4b7e-a96f-adf10d9211ed))
+    (pin "B8" (uuid b33bcde8-ada0-476d-b6e1-d0ab7325de88))
+    (pin "B9" (uuid bd31d98e-ad11-443e-a286-aff7fbc7d917))
+    (pin "S1" (uuid 9610a886-6837-46d2-89ce-fea48b21866e))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -9783,8 +9928,8 @@
     (property "Datasheet" "~" (at 50.673 74.041 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8f964319-49df-4c76-850e-64a479377d9b))
-    (pin "2" (uuid ba89b160-c818-4d97-9588-a37aa662e5cf))
+    (pin "1" (uuid acfa72f0-25ea-4927-922e-3a30305eb6b1))
+    (pin "2" (uuid 8ef9c4c6-3d64-4c32-9642-e6f8849f9f2e))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -9814,8 +9959,8 @@
     (property "Datasheet" "~" (at -52.197 258.953 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 685d3dc5-5c82-4fce-988d-07ccbf828203))
-    (pin "2" (uuid 9eba29f9-8b75-441a-bb38-07af096b1623))
+    (pin "1" (uuid c21d0345-8794-4657-afd3-e23dae30cc9d))
+    (pin "2" (uuid f74c3980-0b96-4cee-bead-6bb1d9f280ee))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -9840,7 +9985,7 @@
     (property "Datasheet" "" (at 191.008 84.963 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c705a6fd-cffb-4dc2-a16c-5d69a56ea502))
+    (pin "1" (uuid f7477427-4e9b-40d6-ab83-5fc923cd71ee))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -9887,10 +10032,10 @@
     (property "Reference" "J3" (at 338.963 192.024 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "FTS-107-01-X-DV-A" (at 339.09 213.106 0)
+    (property "Value" "FLE-107-01-X-DV-A" (at 339.09 213.106 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "BatteryTester:SAMTEC-FTS-107-01-X-DV-A" (at 337.693 202.438 0)
+    (property "Footprint" "BatteryTester:SAMTEC_FLE-107-01-X-DV-A" (at 337.693 202.438 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 337.693 202.438 0)
@@ -9939,8 +10084,8 @@
     (property "Datasheet" "~" (at -32.258 299.466 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b4b0445f-937c-4945-a27a-01d16c1b049d))
-    (pin "2" (uuid d5f469bb-be7f-49e3-a2b8-eae246bc6f05))
+    (pin "1" (uuid 607e1f81-1817-419d-9f1f-87ce03d1d187))
+    (pin "2" (uuid d76d1659-cfb0-401f-9c59-cc28e69c5766))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -10040,6 +10185,31 @@
     )
   )
 
+  (symbol (lib_id "Connector:TestPoint") (at 333.883 157.861 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 7335a6ba-b4b3-499f-beb3-82f0f7fbd4ef)
+    (property "Reference" "TP7" (at 338.963 161.29 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "GND" (at 339.217 163.322 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 328.803 157.861 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 328.803 157.861 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 26d2c482-b294-469b-a41f-cf30de6e1212))
+    (instances
+      (project "Battery Tester"
+        (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
+          (reference "TP7") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Amplifier_Operational:TLV9001IDCK") (at -31.496 282.448 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 759925f9-8641-41b1-a0e9-bef233865e38)
@@ -10055,11 +10225,11 @@
     (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv9001.pdf" (at -31.496 282.448 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7fae9d7b-d268-4cb2-86cb-750fe3dbdee2))
-    (pin "2" (uuid 0b9791f8-bab3-4a7c-91ff-90e139f09d21))
-    (pin "3" (uuid f287d817-657b-4f23-a02c-9f641e453edb))
-    (pin "4" (uuid 5cebbf6f-1dcc-43ec-a245-6687bbf1717b))
-    (pin "5" (uuid 6176f010-5e3a-4aba-8c2d-b18c4bf8f685))
+    (pin "1" (uuid d97e7809-a695-42fb-a8ce-23ee72842a5b))
+    (pin "2" (uuid 73b1a913-e6f0-4df7-b3d2-0d658f9906b2))
+    (pin "3" (uuid 806fe0c4-17f3-441e-bb38-a136f213f033))
+    (pin "4" (uuid 9cd1dfeb-9fdd-4ba6-a11c-9ee7d936b6d2))
+    (pin "5" (uuid a198f7cf-0fe0-4fb1-92a4-b037eed2f457))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -10084,10 +10254,10 @@
     (property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" (at 150.495 181.229 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
-    (pin "1" (uuid 9b8172e4-3bb9-47c3-8775-9f517b9ba9cf))
-    (pin "2" (uuid 043be3ff-14c5-4554-9e10-2fb67a777e44))
-    (pin "3" (uuid d65d0d53-a9dc-470b-a737-18e750343a41))
-    (pin "4" (uuid 14447596-3600-4a75-8c6e-d202a3c1f933))
+    (pin "1" (uuid e8cb099d-1b0d-4454-be4d-614768bc3659))
+    (pin "2" (uuid 5e3dd503-7591-4645-866d-4e781e9cfda3))
+    (pin "3" (uuid d5fbaddd-169d-462f-9579-8508fe9e148b))
+    (pin "4" (uuid f7b2fa4d-c59c-403c-861d-7ab9a338299e))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -10117,7 +10287,7 @@
     (property "Datasheet" "" (at 176.784 316.611 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 07beda05-fa95-4282-9b20-18dc79217da7))
+    (pin "1" (uuid 8a120377-d791-4423-9ffe-2daebe2f7dd8))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -10142,8 +10312,8 @@
     (property "Datasheet" "~" (at 40.259 37.592 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ce924223-44c6-42ed-9ff4-221830e616e3))
-    (pin "2" (uuid cd504bae-aaaf-4193-a13c-14451cbcea3a))
+    (pin "1" (uuid f698399a-bcda-438b-9fb3-0a00409006f2))
+    (pin "2" (uuid 45f446fa-df21-4945-8302-786fe4a890ce))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -10173,8 +10343,8 @@
     (property "Datasheet" "~" (at 200.787 80.518 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7308f817-5090-44da-8022-03e15683c8b4))
-    (pin "2" (uuid bfe15c99-d375-40c4-866b-ef6127bf2edd))
+    (pin "1" (uuid d453e0c7-efe3-4974-95f1-f9de6cf58935))
+    (pin "2" (uuid a14a227a-b185-4410-b329-5e59f6d9cebc))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -10199,8 +10369,8 @@
     (property "Datasheet" "~" (at 206.121 98.044 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bdfc7329-083f-4f1f-a899-211df1a08718))
-    (pin "2" (uuid 8c0527b9-a272-4502-a27e-3b7b5381262b))
+    (pin "1" (uuid 200217e3-851c-4852-8ec7-98829cad51dd))
+    (pin "2" (uuid d6e7519e-ab7b-4425-aa0d-a0ef0a1bc341))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -10225,8 +10395,8 @@
     (property "Datasheet" "~" (at -58.166 79.121 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b58c3810-0e29-4169-83c6-c4ed0d5c0709))
-    (pin "2" (uuid 6e5ce7d1-c964-4123-bddb-4bf7e96b0d9b))
+    (pin "1" (uuid 4b9fd84d-cdef-4690-a4f1-6439d69b675b))
+    (pin "2" (uuid ac521a6c-67d5-4885-988a-0b136bfd0d62))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -10251,7 +10421,7 @@
     (property "Datasheet" "" (at 202.565 298.831 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 246cb048-16a1-458f-bb9d-aeaaf433aa3f))
+    (pin "1" (uuid cc4c7af0-7dcd-47fc-8295-1f8d8616c977))
     (instances
       (project "mainboard"
         (path "/1aa2047c-1463-47dc-8fa9-594d0cbf3c24"
@@ -10312,7 +10482,7 @@
     (property "Datasheet" "" (at 119.38 56.769 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ffaf59b6-d2f7-412a-ad21-c29ac050f376))
+    (pin "1" (uuid a8974bc3-a299-48df-aef6-b55f1fc3b333))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -10342,7 +10512,7 @@
     (property "Datasheet" "" (at -5.715 316.357 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2458cf1d-0239-4b3d-af8c-5ce4445c26ed))
+    (pin "1" (uuid 98fe5a1e-2981-4594-851d-f0de85c871a8))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -10372,7 +10542,7 @@
     (property "Datasheet" "" (at 202.819 314.071 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5a1b9388-ba48-423f-b9f4-50989883b73e))
+    (pin "1" (uuid a1eeae5b-613d-45fe-a052-477ebd6ad35c))
     (instances
       (project "mainboard"
         (path "/1aa2047c-1463-47dc-8fa9-594d0cbf3c24"
@@ -10444,63 +10614,63 @@
     (property "STANDARD" "IPC 7351B" (at 80.772 104.521 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
-    (pin "1" (uuid e2154600-28a2-435e-8d56-7b0aa918134e))
-    (pin "10" (uuid fd5034ed-cd7d-41da-aaf3-4ce3825eaa03))
-    (pin "11" (uuid f3ffb01c-4b7f-4d03-a820-cabd5b3aaec0))
-    (pin "12" (uuid 03729b0f-7880-429b-a224-38e9e32f1d7e))
-    (pin "13" (uuid 245ec0c3-a3da-4393-9c59-39f1053ee75d))
-    (pin "14" (uuid 7a990a0b-059b-4881-a6fa-0ad18e1a7cc2))
-    (pin "15" (uuid 501d73e4-cf93-425a-b43b-bf107565b0f4))
-    (pin "16" (uuid 496595fb-8f3b-4263-be09-1bd133e49413))
-    (pin "17" (uuid ff88599d-7cde-4913-9d4d-dfc342d2b990))
-    (pin "18" (uuid 1c790128-e1d4-4953-ab3e-017d9a4d30e7))
-    (pin "19" (uuid 67d8b1e4-d296-4455-b250-70ed9843bf3a))
-    (pin "2" (uuid 185d3387-e66b-4732-bef1-4813af0d15f4))
-    (pin "20" (uuid fc33a010-20cf-4c35-bee5-cdd2f2c71aec))
-    (pin "21" (uuid a6b21304-dca0-4643-988e-2bafd7c4666c))
-    (pin "22" (uuid bffaf690-0539-41b3-a11d-3a458d1524b6))
-    (pin "23" (uuid 663881d7-0c71-4500-a274-4347da446ab4))
-    (pin "24" (uuid 52d2201a-6bff-4bfb-9680-5ca29c2704c9))
-    (pin "25" (uuid 1af9d30a-9905-4e56-b8bc-de41abc2ebf6))
-    (pin "26" (uuid cc31a610-5134-4958-8923-709bc430d35e))
-    (pin "27" (uuid 9305ddf8-165c-4504-9e9e-fb53f5f26696))
-    (pin "28" (uuid 1907aabb-9bda-4e2f-9090-092a30b5bfb1))
-    (pin "29" (uuid 0ccea336-f872-49aa-8b23-ef5088356d27))
-    (pin "3" (uuid 7a883926-39c6-40c8-a8a5-91f81ca536e9))
-    (pin "30" (uuid ee1f7c41-369e-4048-8db4-96cee711509f))
-    (pin "31" (uuid 439a3de4-ba1c-43df-94a6-61c9e2891b16))
-    (pin "32" (uuid fee981c3-d99e-4d78-9630-c904bed0626d))
-    (pin "33" (uuid e90a35e5-df81-406b-811d-c1fd884bf955))
-    (pin "34" (uuid df7b296f-daa7-4e90-af01-21672193f4a2))
-    (pin "35" (uuid 392db352-b68e-4ca4-afce-e344862c7380))
-    (pin "36" (uuid dc6c7856-5297-4e9f-a267-1adda79de419))
-    (pin "37" (uuid 6708bc68-ebd9-4fe8-9a20-955f7f13a30a))
-    (pin "38" (uuid 10016c8f-f6c0-4131-ac37-274f3d293c21))
-    (pin "39" (uuid f192e05f-ef1e-4a20-8e85-45b2bf21a118))
-    (pin "4" (uuid 369f8a92-b5b9-4f22-b319-ee78053dde24))
-    (pin "40" (uuid b2476f87-873f-435a-a001-ca6a95993ec1))
-    (pin "41" (uuid 75c762ea-516c-4a1d-81e4-f2188be523e6))
-    (pin "42" (uuid a95e4b43-4ebc-44e0-8bda-4f1343d67438))
-    (pin "43" (uuid 14df0633-368c-40fd-beac-b3aac25c6c1c))
-    (pin "44" (uuid 7891efef-f7e4-4ca1-b6a5-30e1d97bf4ee))
-    (pin "45" (uuid f996261d-68ed-4107-80f6-8c4a73a47a80))
-    (pin "46" (uuid 39ef4864-3b04-4b5d-9c09-0938a1a9c065))
-    (pin "47" (uuid 4acd700b-3a48-4a68-b08c-514e80fe3473))
-    (pin "48" (uuid 31a2d71e-66d3-4286-9aff-da1936e4c14f))
-    (pin "49" (uuid 98428fca-02a1-479f-a214-b5c267e71083))
-    (pin "5" (uuid 5c1562ce-0990-447c-a96c-69dc16f67812))
-    (pin "50" (uuid 10d6ae29-a0ed-4702-8e50-97f3b0b6bc4b))
-    (pin "51" (uuid 2b847ea7-b2ac-46e8-bc51-de5f4048aa57))
-    (pin "52" (uuid 2aaed74c-00c4-4b31-a6c5-3264796cfce2))
-    (pin "53" (uuid d818a72a-6317-45e9-8897-9d204ecfed4f))
-    (pin "54" (uuid 57de92e5-e694-4e77-8f7f-a4092d96b7f3))
-    (pin "55" (uuid ecbdfaf1-7fe4-46d1-bbd7-60ba486fcd72))
-    (pin "56" (uuid f772fcc3-21e5-4d50-8e60-9ed5a7f5d6f1))
-    (pin "57" (uuid c150fc8f-fdad-4d27-8c10-4de2963788ff))
-    (pin "6" (uuid f0d42b70-74c7-45fa-b88a-e376e44f4526))
-    (pin "7" (uuid 3b897cec-66df-4642-8ba3-5e0a49c20c1f))
-    (pin "8" (uuid b8d5ae1b-30d0-4784-8816-1d7a1dfd6fde))
-    (pin "9" (uuid 9214efe9-3905-4f05-8d0f-47bbe591f72c))
+    (pin "1" (uuid b09eb7c5-d78e-42c8-8a87-787e02387642))
+    (pin "10" (uuid 88000065-196a-4fea-95b4-da31f7fe1789))
+    (pin "11" (uuid 36b26590-e344-47f4-ab62-b6c0c54aa149))
+    (pin "12" (uuid 43155504-9ace-42c5-9fdf-a0d4e5055d9d))
+    (pin "13" (uuid 1b90a599-166e-4f79-b62d-32553b832894))
+    (pin "14" (uuid 5d65c118-ebdd-4dd0-b037-313482d80578))
+    (pin "15" (uuid 3f0ed6c2-7af5-41aa-85c5-d31d5af025e5))
+    (pin "16" (uuid e423bd0f-2e02-4c45-ad4b-12813fd09f4e))
+    (pin "17" (uuid bb075075-854c-4bdb-b72f-4f8ad285b53b))
+    (pin "18" (uuid eeeb688b-5cc4-4fb6-bdf7-0284fa429aa2))
+    (pin "19" (uuid 6c4075d3-1804-40c7-adbb-650752cd0b12))
+    (pin "2" (uuid e4abf4bd-a82b-4345-97dc-5d9f3296b138))
+    (pin "20" (uuid 6469027e-2b90-48cd-a143-54d1865d717c))
+    (pin "21" (uuid 3ae29da5-d73f-4060-b114-ccd1325031e3))
+    (pin "22" (uuid a53e966a-f4e5-411f-beeb-2d364a05108a))
+    (pin "23" (uuid 177d8f56-4690-406c-98a7-cfbb3c38fef0))
+    (pin "24" (uuid bc56ae4f-1ed0-4fc6-9d0d-5ba87a425204))
+    (pin "25" (uuid 95b9394d-efbe-49a3-bfb8-9a23b31079b9))
+    (pin "26" (uuid f334779c-fb89-4724-9644-5965c3f8b360))
+    (pin "27" (uuid 56e361da-eb5d-4daa-8652-026757d608e5))
+    (pin "28" (uuid bbc17041-50a1-42f1-9014-5cfe5a83f858))
+    (pin "29" (uuid a3b13b94-d398-49aa-bf27-1a7f275dc6a9))
+    (pin "3" (uuid 6b9cbd04-1429-4af2-a8cf-4d65ddb0512f))
+    (pin "30" (uuid 57381fc0-07ed-43ba-b835-feba5f2fc29a))
+    (pin "31" (uuid e73d74bf-2474-4807-ae80-662de8e1b306))
+    (pin "32" (uuid e20fd24c-b807-4dc8-8594-a35be06206ee))
+    (pin "33" (uuid ac8f8ee4-390b-4a9f-b437-ef156e9ae29d))
+    (pin "34" (uuid 3da24a5d-5835-456c-ba9d-bb3e1c2ebab5))
+    (pin "35" (uuid aae2d08b-4213-4568-b27e-98a30c770549))
+    (pin "36" (uuid 2cd87ea2-b3ee-436e-9565-d26e5103d205))
+    (pin "37" (uuid 5f1956a7-7e86-4b09-8b17-ae5bfd84fc68))
+    (pin "38" (uuid ba5e75f9-702a-4333-ac2a-88519e38c736))
+    (pin "39" (uuid 80f3b857-d83b-4c76-9e60-dd8765dcf343))
+    (pin "4" (uuid 6261948e-42b4-45c0-bf98-377258e00a3e))
+    (pin "40" (uuid 2e86b643-3466-4a89-97c7-ca4c1ae9b019))
+    (pin "41" (uuid 86a1de5f-2905-49c2-9ba2-fd243ce41560))
+    (pin "42" (uuid fe7a9ba1-14cb-49a9-b444-3ea73344f18f))
+    (pin "43" (uuid 38b974d5-c3c3-45bb-ace5-2bf3c4efe24f))
+    (pin "44" (uuid 40bb515c-09d3-4d7d-b746-64961a2093c2))
+    (pin "45" (uuid baefe5ec-ac4a-47e0-82e1-8caaf8bfc763))
+    (pin "46" (uuid f23c275e-2aad-4e16-89a1-daf077becda6))
+    (pin "47" (uuid 9f470155-745b-4e76-a943-17db69dc913d))
+    (pin "48" (uuid 4320e1b1-d5c4-46e2-bbd8-c65a32f6165b))
+    (pin "49" (uuid 757b1767-957c-4db5-aea1-9dc149cdd528))
+    (pin "5" (uuid 93979591-21d4-4314-a9cc-230371e341f6))
+    (pin "50" (uuid 9654677b-3611-4973-bcd3-d7c1367c856c))
+    (pin "51" (uuid 0d2588dc-7bc8-4cdb-889d-31db78dd5a86))
+    (pin "52" (uuid a027a484-da16-4966-8cd8-d02661cd15ee))
+    (pin "53" (uuid f679121a-7a22-4fe5-96a4-9c3e3ae0ea23))
+    (pin "54" (uuid dc42fb1c-e5c8-4569-8517-2f68ec604d2e))
+    (pin "55" (uuid dd7c0494-d8e6-4c0b-aabd-b3ca14be1600))
+    (pin "56" (uuid c319e943-646b-4e4a-833c-95fe97c59eae))
+    (pin "57" (uuid b0475b12-dbb9-4c59-8faa-58c42b53247b))
+    (pin "6" (uuid 171ecc68-3cba-47db-a430-7d190e99051f))
+    (pin "7" (uuid a59d9cd0-d649-491a-a525-687afc8307f7))
+    (pin "8" (uuid c1cf9615-5700-43fc-92c5-5b761a068923))
+    (pin "9" (uuid 0c1d9eb0-1b8a-4a13-84d0-f696f231e881))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -10530,7 +10700,7 @@
     (property "Datasheet" "" (at -31.496 290.957 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 74f8616f-272a-4b23-a3ec-b5087a3dc5df))
+    (pin "1" (uuid 22a1512a-8234-43fc-8761-a0ebf23d5974))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -10590,8 +10760,8 @@
     (property "Datasheet" "~" (at -43.053 141.986 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4e8b3e25-0f00-47c3-902c-9a6a56aff417))
-    (pin "2" (uuid e59b209d-4a03-46eb-811c-f63497f355c4))
+    (pin "1" (uuid 0e0c4f2f-82d9-4a2e-9499-c43a4e78c97f))
+    (pin "2" (uuid dd6094b6-5344-4717-8070-46bfd6694bb3))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -10616,8 +10786,8 @@
     (property "Datasheet" "~" (at 169.164 78.613 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 29a8c61d-ecf0-4445-8d49-61d7cf130e85))
-    (pin "2" (uuid b49a358f-d0af-417a-8488-3b2d05820d0b))
+    (pin "1" (uuid 241aacef-2e60-4dcc-bae4-68f89e4b72c1))
+    (pin "2" (uuid 457f7f2c-183d-4730-89e6-c2b2dcd508ce))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -10647,9 +10817,9 @@
     (property "Datasheet" "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" (at -8.255 282.448 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (pin "1" (uuid 4071d391-4d7a-42e4-a9db-e5b7037c1d35))
-    (pin "2" (uuid b061a342-9725-45dc-9939-6d4d87c74493))
-    (pin "3" (uuid 43294b71-38a0-4cd4-b9c5-c701533224d5))
+    (pin "1" (uuid e398a803-ca11-409a-982f-ed2f347a5865))
+    (pin "2" (uuid 2c88d3b1-f256-4ee0-9d36-3c9318d1ec7e))
+    (pin "3" (uuid 5364f7a1-11bf-4f4a-aa9b-42d7aa22e330))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -10674,8 +10844,8 @@
     (property "Datasheet" "~" (at -58.928 186.309 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6528f50c-00f5-457d-8723-5372f62b34e1))
-    (pin "2" (uuid 3e296a29-ae2a-4107-a0c3-d8b22f2eb3fb))
+    (pin "1" (uuid 657f586e-df13-4294-8232-23ad7d443eff))
+    (pin "2" (uuid 498be0e1-4f25-4482-9c04-24d5738b818f))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -10768,7 +10938,7 @@
     (property "Datasheet" "" (at -32.004 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 76e37e07-353c-46a0-a09b-5bdc256fc062))
+    (pin "1" (uuid ccd882b7-aa51-4075-9330-ab633addec27))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -10849,8 +11019,8 @@
     (property "Datasheet" "~" (at -43.307 151.892 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d3ddd07f-2581-4b33-b1fb-189815288239))
-    (pin "2" (uuid 0486b350-e7ca-47ea-bdb0-d60ebc9c71a6))
+    (pin "1" (uuid d618ea97-4b3d-4b0c-8929-27c8877d42e3))
+    (pin "2" (uuid 5aa15517-0fc3-48b4-b3af-b7d84b6387cd))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -10875,8 +11045,8 @@
     (property "Datasheet" "~" (at 70.485 37.592 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 168434a1-b8aa-46d1-afd1-110003b207a1))
-    (pin "2" (uuid a79be37e-1f56-4c35-918b-c1056c1d698b))
+    (pin "1" (uuid 76475ab2-20e5-42d7-9da9-5154b1901aa0))
+    (pin "2" (uuid 0f1a0be7-89d8-4147-8985-1419e1d820a3))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -10906,8 +11076,8 @@
     (property "Datasheet" "~" (at 196.977 42.037 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 25121c0b-1a09-483b-b5b8-0481a6968b62))
-    (pin "2" (uuid 95777031-801d-4639-ba09-522b52b96cfd))
+    (pin "1" (uuid 23e6f91f-2b04-4ace-ae81-376b2731f3d3))
+    (pin "2" (uuid 655598de-8570-4e89-9464-36cfc1613682))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -10937,7 +11107,7 @@
     (property "Datasheet" "" (at 202.946 316.611 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ef5ded9a-197d-4614-aeaf-3b493f6dfc32))
+    (pin "1" (uuid e2899572-d0fd-43b3-a642-4286976fc715))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -10962,8 +11132,8 @@
     (property "Datasheet" "~" (at -32.131 64.389 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4df69b11-2fcf-499d-8bd9-fd4a8728e124))
-    (pin "2" (uuid 1e64c3d5-48fd-41bf-aa60-ce36213bc5e2))
+    (pin "1" (uuid 66c479e9-e479-405c-ab16-7eb3e0bb623a))
+    (pin "2" (uuid 023638ae-1e4d-4ebf-8ed6-6a5e58139f35))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -10988,8 +11158,8 @@
     (property "Datasheet" "~" (at 139.192 117.856 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 84631949-f658-4aac-a938-66c27570db55))
-    (pin "2" (uuid a1da95a4-ee73-4125-aa19-c7fba29f915d))
+    (pin "1" (uuid b1caf42f-d703-4081-a2f1-f0c7dfb5ad29))
+    (pin "2" (uuid 85ed645f-1981-4457-8e87-e4a2d39489f7))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -11029,22 +11199,22 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 132.588 286.258 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 130.048 287.274 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9492fac2-b8d9-4ed7-8527-1fd2d9368e62)
-    (property "Reference" "#PWR070" (at 132.588 292.608 0)
+    (property "Reference" "#PWR070" (at 130.048 293.624 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 132.588 290.703 0)
+    (property "Value" "GND" (at 130.048 291.719 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 132.588 286.258 0)
+    (property "Footprint" "" (at 130.048 287.274 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 132.588 286.258 0)
+    (property "Datasheet" "" (at 130.048 287.274 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c07bb30f-f4a2-4843-a9b6-0190a188d2f1))
+    (pin "1" (uuid 8ce6b4cf-eec8-46df-b41b-a5159d9555f7))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -11069,7 +11239,7 @@
     (property "Datasheet" "" (at 248.539 56.007 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f03cb2de-29eb-48bd-be0f-2004c7c26164))
+    (pin "1" (uuid 65bb530c-7771-4729-b386-8fa0124c0488))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -11099,8 +11269,8 @@
     (property "Datasheet" "~" (at -45.085 107.696 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 84ba6109-25fb-4688-bce1-b0b93760a6a0))
-    (pin "2" (uuid 38fcee14-1191-4bb5-87f8-5dabc3f47a3e))
+    (pin "1" (uuid aae6d735-5400-4de3-8e82-fb08a89cd63b))
+    (pin "2" (uuid 0cde9fbe-31e3-4418-b908-cfb9b3f1b620))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -11125,7 +11295,7 @@
     (property "Datasheet" "" (at 50.927 253.746 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 763b9211-7f17-4d47-a9d7-05ff746741e0))
+    (pin "1" (uuid 3773c62e-8b33-494d-9430-20758b9dcb79))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -11155,8 +11325,8 @@
     (property "Datasheet" "~" (at -5.715 312.293 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 31b56b9f-7e33-4840-82f5-d80add41e6f7))
-    (pin "2" (uuid d25650e1-ac63-4eb5-984e-3c0d5c5a6b63))
+    (pin "1" (uuid 419343be-69c6-4fd0-9117-56c061eff47d))
+    (pin "2" (uuid c4418b63-6b4a-4e4b-b37b-ba4ce077d51b))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -11241,7 +11411,7 @@
     (property "Datasheet" "" (at 265.938 142.875 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 55a1273f-07ea-40f7-a74c-5ec04cfb1ce3))
+    (pin "1" (uuid 42c293b5-4399-4fd4-ab3d-1d2d9f5dfdf3))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -11251,6 +11421,31 @@
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
           (reference "#PWR013") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 116.205 132.461 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid a01efa0a-a43f-45c4-94b6-c44217811873)
+    (property "Reference" "TP5" (at 121.158 132.461 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "A01" (at 125.349 132.461 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 116.205 137.541 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 116.205 137.541 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid df3e1547-2f13-46b7-83ea-5d073e19f089))
+    (instances
+      (project "Battery Tester"
+        (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
+          (reference "TP5") (unit 1)
         )
       )
     )
@@ -11271,9 +11466,9 @@
     (property "Datasheet" "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" (at 109.601 281.432 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (pin "1" (uuid b7fc8660-4207-4896-b631-d46f604f37f6))
-    (pin "2" (uuid 19da204c-2664-4b02-95e7-d77e50fa467f))
-    (pin "3" (uuid 21c5c810-4e2d-4ee0-be04-2c2ffa5dbf6e))
+    (pin "1" (uuid 2835bb2d-238f-4ee8-b872-d5c0f79ea58a))
+    (pin "2" (uuid bfc29a62-5232-4e2a-96a5-4f25f48a509c))
+    (pin "3" (uuid 7ce91f23-dabf-4c71-bf0c-bb425437aea0))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -11328,12 +11523,12 @@
     (property "Datasheet" "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" (at 253.619 35.814 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5084b178-47b3-4084-93a9-5cc6ab758316))
-    (pin "2" (uuid 1c9d3f17-97ad-4462-9759-ee2d4033edea))
-    (pin "3" (uuid c6448581-3506-4173-9961-cca7669abf56))
-    (pin "4" (uuid 5dd64099-f37f-4755-8e9f-82431191040f))
-    (pin "5" (uuid db498534-3e68-44ef-b7c0-488015ca3443))
-    (pin "6" (uuid 3061e101-e850-4d10-963e-d329d867b6ff))
+    (pin "1" (uuid 0b53ff23-134d-45a3-85af-2f16d92a9296))
+    (pin "2" (uuid d5ad8af6-a6fc-4ef3-b368-3f42b34f5f35))
+    (pin "3" (uuid 28771f50-7781-485c-9408-958f289608ee))
+    (pin "4" (uuid c77333d0-8fcb-4610-9a37-2d97c813b6b9))
+    (pin "5" (uuid 8f6e3386-50df-46cc-8dae-0a0122824cc3))
+    (pin "6" (uuid 0ddad0c3-598e-444d-bb8b-97aa493b9c06))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -11363,7 +11558,7 @@
     (property "Datasheet" "" (at 189.357 153.924 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d19e8b2a-c8fc-490c-a363-bf948b45839b))
+    (pin "1" (uuid 786b94f0-3977-4378-86e4-e963028050b4))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -11393,8 +11588,8 @@
     (property "Datasheet" "~" (at -58.166 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ff862a1f-b2bf-4999-9c5d-027db67f02ab))
-    (pin "2" (uuid 4ca8e913-3cd2-47e2-bac5-0975ef0ae6a1))
+    (pin "1" (uuid 352e03e8-9832-451f-ab20-cb135c245786))
+    (pin "2" (uuid 3a19ac91-0e42-4776-b13a-bff4c78b26d6))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -11419,8 +11614,8 @@
     (property "Datasheet" "~" (at 85.471 306.324 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8c235d38-f8be-4bbb-8901-b4d655fcc681))
-    (pin "2" (uuid 1104bdeb-7f4b-46c7-be81-dfa371df6c89))
+    (pin "1" (uuid af3deb30-c3a4-454e-b1d5-f326666f6dde))
+    (pin "2" (uuid 9796f6b2-270a-498d-819a-fb9e3e040787))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -11483,7 +11678,7 @@
     (property "Datasheet" "" (at 50.927 277.622 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bff1ac36-2c22-4f4f-b0c8-8d60a9e0bc18))
+    (pin "1" (uuid 6cb66c08-efb4-4a36-87bd-c24fc0271709))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -11543,8 +11738,8 @@
     (property "Datasheet" "~" (at -51.562 151.892 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e9dc650e-0f66-489b-8963-4f3c2698bc2a))
-    (pin "2" (uuid 3395fc47-7b7c-4d7d-b8bd-04a7a067e669))
+    (pin "1" (uuid 9a7912c0-325d-46ed-a045-dd845d148edf))
+    (pin "2" (uuid 46bb7762-17c2-48d4-b306-a1179530dfe6))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -11569,8 +11764,8 @@
     (property "Datasheet" "~" (at -32.004 111.633 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0b88c22d-e3b2-4baf-84a3-63c07e55664f))
-    (pin "2" (uuid abd16a95-cf74-4faf-b094-ff969339c094))
+    (pin "1" (uuid a778fd45-e9ae-4bb3-bb22-f178d4239955))
+    (pin "2" (uuid 40e0a9b8-014a-4f12-9cf9-8a481ce6a9da))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -11595,8 +11790,8 @@
     (property "Datasheet" "~" (at 101.092 281.432 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bc934a8d-3e67-4171-87c4-41f80d1597b4))
-    (pin "2" (uuid c451cd42-7f51-41a4-ba92-0b79992beaff))
+    (pin "1" (uuid 5276c6d3-ea36-421b-af7c-50eee8f35f9f))
+    (pin "2" (uuid 6d2af980-9252-434c-a438-5cf791bac753))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -11626,11 +11821,11 @@
     (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv9001.pdf" (at 86.36 281.432 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ce0b1f70-cc67-45e4-8d0d-0e68454be592))
-    (pin "2" (uuid 73630e1c-06cf-4d39-944c-48fa5f461d18))
-    (pin "3" (uuid cd0b3a4b-e0c0-49b1-aed6-4e7a49775d13))
-    (pin "4" (uuid 55564132-5a89-45d5-8373-5b08310cdc1e))
-    (pin "5" (uuid 4727c0c9-8c04-4686-8b80-716202016ffe))
+    (pin "1" (uuid 97b5053a-2d8b-4999-9507-9616fbfa43a2))
+    (pin "2" (uuid 1dc509b6-5884-43ba-82c4-2106267e350d))
+    (pin "3" (uuid c30201af-3680-4d68-9515-60c5cd8e7e87))
+    (pin "4" (uuid c7cfdf3b-f8d5-49e0-bbbc-32824ba565c6))
+    (pin "5" (uuid d7370321-76e3-479b-b56f-1c2bcbe056da))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -11711,7 +11906,7 @@
     (property "Datasheet" "" (at 262.128 85.217 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0c6e98ff-8e55-4575-ba0d-ee2ac0335497))
+    (pin "1" (uuid c6d3c91d-5b5e-41b3-9735-c1f9897c57ca))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -11741,7 +11936,7 @@
     (property "Datasheet" "" (at -66.929 278.638 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3096fef4-9cc3-418e-bc9f-e611885d49d4))
+    (pin "1" (uuid 912476d5-17c6-441c-8276-8f592be1fb62))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -11771,7 +11966,7 @@
     (property "Datasheet" "" (at 189.357 128.651 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5ea13aee-a59c-42b7-a1d0-b1e47c8fa4de))
+    (pin "1" (uuid 834ea387-e213-442e-a4fa-2a911e46f78e))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -11786,7 +11981,7 @@
     )
   )
 
-  (symbol (lib_id "Mechanical:Heatsink_Pad") (at 132.588 282.575 0) (unit 1)
+  (symbol (lib_id "Mechanical:Heatsink_Pad_2Pin") (at 132.588 282.575 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ab7e7009-387c-491e-8e0e-167a91aba298)
     (property "Reference" "HS2" (at 136.652 280.924 0)
@@ -11801,7 +11996,8 @@
     (property "Datasheet" "~" (at 132.8928 283.845 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b85385ea-3db9-45a5-b999-5b2a65d9bc35))
+    (pin "1" (uuid ca1a12f3-4bc3-4a91-b37e-1e221352452a))
+    (pin "2" (uuid 01e592ee-1927-47ec-bfc4-4cd77a1d3733))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -11826,8 +12022,8 @@
     (property "Datasheet" "~" (at -32.004 87.884 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3129e480-6509-49fb-91bc-38571737c9c9))
-    (pin "2" (uuid d3ab1329-da33-46f6-a753-42b4cbd3c85c))
+    (pin "1" (uuid b68c54e6-f6db-43e3-abdf-beca335d98d8))
+    (pin "2" (uuid d1d85c0c-ae4f-4ac9-9f17-083ba79da02d))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -11852,7 +12048,7 @@
     (property "Datasheet" "" (at 86.36 289.941 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0361f429-ea80-4028-b7ac-96da45863a98))
+    (pin "1" (uuid c212c809-b7c8-4582-b0fa-0b4ca4a5d7b4))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -11882,8 +12078,8 @@
     (property "Datasheet" "~" (at -58.928 337.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 209c79b3-9d81-4eba-b44a-bbf33b0fba51))
-    (pin "2" (uuid 99c3c133-c562-438f-a5f8-8e8219e1f5db))
+    (pin "1" (uuid 83c65899-6143-4ea0-bbcc-ab4964cb9592))
+    (pin "2" (uuid 4b84ba75-65c1-41c7-acec-6069eba1c651))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -11944,8 +12140,8 @@
     (property "Datasheet" "~" (at -62.484 258.953 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 96ad0580-61ed-4284-9893-f55228bdb249))
-    (pin "2" (uuid bcdbf7ed-29e7-4844-88df-f1a191eec03e))
+    (pin "1" (uuid 8109336e-9616-4350-b263-83113a16d043))
+    (pin "2" (uuid 9ffc82b3-209d-48ba-ba92-04d42b04e6bc))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -11970,7 +12166,7 @@
     (property "Datasheet" "" (at 176.784 73.533 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 04615367-f666-4d6a-a7e2-9809d94f5922))
+    (pin "1" (uuid 0e1f0492-00d6-4bb1-8d45-44256dbb378a))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -12000,10 +12196,10 @@
     (property "Datasheet" "~" (at 47.371 91.821 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ab142cb9-ee15-4e46-80f0-4a1820f97d5a))
-    (pin "2" (uuid 9ab942bd-03a4-4fbc-9736-6e67e5999394))
-    (pin "3" (uuid b7d48399-869e-43b3-a7f0-58359f5dbb2a))
-    (pin "4" (uuid e3b9512e-eaf7-4bc1-b0c3-0a0c62f7edb8))
+    (pin "1" (uuid d1eb56b5-b7b3-49eb-8e0b-b80578705d89))
+    (pin "2" (uuid 3c79b13c-566e-4446-9fe2-1a60682cea1c))
+    (pin "3" (uuid 164e0501-1654-4e62-a622-fc72726cd828))
+    (pin "4" (uuid 456712f0-9fd1-4a2d-8469-957460464fcf))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -12033,8 +12229,8 @@
     (property "Datasheet" "~" (at 248.412 141.224 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c68e47b8-ba26-4c29-9a2c-9896071c2b37))
-    (pin "2" (uuid 5ccca48c-639b-48c1-82f0-4b4554100cb6))
+    (pin "1" (uuid 7ad4cfc5-9bc9-4292-8427-955fd85b397d))
+    (pin "2" (uuid 4f177ef2-1298-4250-a7f0-8eacf5fedbcc))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -12094,7 +12290,7 @@
     (property "Datasheet" "" (at -31.496 273.177 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 604990aa-5290-4820-8b66-0fb0df411388))
+    (pin "1" (uuid f7f26ebd-e757-4f68-8d4b-03e5b85b55cb))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -12180,7 +12376,7 @@
     (property "Datasheet" "" (at 202.184 42.037 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6c6ffa37-25ad-400a-8c97-74aea7be4734))
+    (pin "1" (uuid 6834168f-e151-484e-b618-38ad5cb010f3))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -12240,8 +12436,8 @@
     (property "Datasheet" "~" (at 55.372 257.937 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1a0e2e6a-54ed-430d-97ed-0f2783b934af))
-    (pin "2" (uuid 39fe7670-ffe6-4b57-a1cc-02bb7075a235))
+    (pin "1" (uuid 3ec1e686-6610-44ce-8a18-18dc36515a31))
+    (pin "2" (uuid 9575ea63-44d5-487b-9675-e6b152430ce6))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -12266,8 +12462,8 @@
     (property "Datasheet" "~" (at 132.207 37.592 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e82282f0-d19f-43ce-8a4f-14d0ec41a36e))
-    (pin "2" (uuid 77c36dbe-c122-4fae-9b8b-e9a6799a6899))
+    (pin "1" (uuid dd40c3e7-178e-422e-b0bc-1f35aae1b5d2))
+    (pin "2" (uuid 5f76ed0e-07aa-454a-a300-8592686883d0))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -12297,7 +12493,7 @@
     (property "Datasheet" "" (at 65.405 32.512 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 55c7f486-549b-41b5-a4f0-d3c592163742))
+    (pin "1" (uuid a78cd51e-8fd3-4ae7-a0de-a956218d769b))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -12327,8 +12523,8 @@
     (property "Datasheet" "~" (at 53.721 94.361 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 79342b72-8aaf-4901-9a0b-804960a68cbe))
-    (pin "2" (uuid af044d99-fe42-47ae-9eb8-69d38d918861))
+    (pin "1" (uuid 8fb8c9cc-b07c-4deb-8268-9f2a34fba031))
+    (pin "2" (uuid c9b10497-f987-4398-a2c9-42e449a94a81))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -12358,7 +12554,7 @@
     (property "Datasheet" "" (at -52.197 263.017 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e58e463e-9fb0-4390-bb8d-9fabe4c766a3))
+    (pin "1" (uuid 30a76b4b-1401-4920-8d35-07b85b0125ca))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -12388,8 +12584,8 @@
     (property "Datasheet" "~" (at -42.926 132.969 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b0a15240-b299-4dce-8051-2a33c903f055))
-    (pin "2" (uuid e7a07e5a-3e6b-40d5-b56f-60821991baac))
+    (pin "1" (uuid 332db5b2-8d6b-420c-8a1d-075be7ca37b3))
+    (pin "2" (uuid a2193c2c-9daf-4ee0-9324-a41b3fa08f28))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -12414,7 +12610,7 @@
     (property "Datasheet" "" (at -66.929 254.762 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7e033d6e-4a4a-486a-9320-2fa3fab88ef5))
+    (pin "1" (uuid fa24f4fa-6d4a-438c-a9a8-36aaf295efde))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -12500,8 +12696,8 @@
     (property "Datasheet" "~" (at -43.434 161.798 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 089daa1f-2a30-4ecf-9e1c-413e61865767))
-    (pin "2" (uuid 031f7bd0-9af6-433c-82eb-cc3bd527bba7))
+    (pin "1" (uuid 07880cbc-8bdb-4208-a88c-6575880900e6))
+    (pin "2" (uuid b6bb22d4-8c40-4e6f-affd-3d036ed23608))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -12526,7 +12722,7 @@
     (property "Datasheet" "" (at -93.726 367.919 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ead0b182-11ef-4a2d-ac4b-6581bdc1f48b))
+    (pin "1" (uuid 0b999fc6-f329-4c7f-bb0c-1defb9827681))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -12556,7 +12752,7 @@
     (property "Datasheet" "~" (at 51.689 79.121 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 00e77f3e-7a74-490b-987f-2c4c752600a4))
+    (pin "1" (uuid 0c28940d-a172-4f30-a8bc-d3970cb69f8c))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -12581,8 +12777,8 @@
     (property "Datasheet" "~" (at 117.856 311.277 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid aaf8234d-f15a-40d9-a2de-53ed8fd3eb64))
-    (pin "2" (uuid 01bbe673-a17d-4afd-8b9d-967d0017a5b4))
+    (pin "1" (uuid 7c0ada7b-3aab-40fe-9d15-ef1440bbd045))
+    (pin "2" (uuid 0f6b1e46-0d80-4a6f-aa19-02dbd9271cae))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -12642,8 +12838,8 @@
     (property "Datasheet" "~" (at 111.887 37.592 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 81d7438f-212b-4818-9949-f1bf33d04161))
-    (pin "2" (uuid 9d947162-6a4d-43f4-8c0a-e02a076b29ea))
+    (pin "1" (uuid 11b9b183-7a5b-4f3c-96c6-d62996bd02bd))
+    (pin "2" (uuid 871b1270-a91e-420d-8665-c7059346673d))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -12703,8 +12899,8 @@
     (property "Datasheet" "~" (at 139.319 96.012 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9c322509-d812-40c9-8b36-e7c1424247d1))
-    (pin "2" (uuid b514e9ca-3286-45fc-8435-df18764c6f4a))
+    (pin "1" (uuid c67bfb07-244d-4e9b-ae9c-5b3627876b20))
+    (pin "2" (uuid 2bb74d5a-3685-46f8-8f90-eaa9ca9d1d68))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -12729,7 +12925,7 @@
     (property "Datasheet" "~" (at 51.689 76.581 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid dd3ce0b6-b2df-41f3-bad0-eb10e933ed97))
+    (pin "1" (uuid 2bf02b03-e330-4b81-ae75-cb9674b457ab))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -12810,8 +13006,8 @@
     (property "Datasheet" "~" (at -44.958 342.646 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e440a830-4513-4136-998e-99f25997b24c))
-    (pin "2" (uuid fec4d001-9683-49ee-b5d5-e07414049748))
+    (pin "1" (uuid 0d41bcdf-b1b3-472a-a2b0-aec1216a8b20))
+    (pin "2" (uuid ff8228fd-c386-4f33-a5b1-46001b14504b))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -12841,8 +13037,8 @@
     (property "Datasheet" "~" (at 263.779 47.244 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 379b207c-3def-41e4-8bd7-e025586d41f5))
-    (pin "2" (uuid a7591827-0233-4137-abdd-39b7ad47885e))
+    (pin "1" (uuid 41f3b45e-3019-4758-a620-de14b296b463))
+    (pin "2" (uuid c8373023-588c-4e3d-a5c7-ac510f009598))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -12872,7 +13068,7 @@
     (property "Datasheet" "" (at 34.671 95.377 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 35535168-2570-4001-92b5-cc8e3d4dd04e))
+    (pin "1" (uuid 7c3affb7-9f77-414c-ab3e-1d8784c3fb22))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -12887,19 +13083,19 @@
     )
   )
 
-  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 608.838 85.852 0) (unit 1)
+  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 605.155 85.852 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c5c2a01a-45f8-4d94-bedc-9a0edef346cc)
-    (property "Reference" "#PWR0138" (at 608.838 92.202 0)
+    (property "Reference" "#PWR0138" (at 605.155 92.202 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 608.838 89.408 0)
+    (property "Value" "GND" (at 605.155 89.408 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 608.838 85.852 0)
+    (property "Footprint" "" (at 605.155 85.852 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 608.838 85.852 0)
+    (property "Datasheet" "" (at 605.155 85.852 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 602d78ce-858d-4e38-95fd-7a4e753d971a))
@@ -12932,8 +13128,8 @@
     (property "Datasheet" "~" (at -49.784 192.659 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7380739c-1054-4084-9ead-a8b284b48992))
-    (pin "2" (uuid b0102561-de41-4c7e-824a-093e09e9c188))
+    (pin "1" (uuid 02913d9c-29f6-4fd9-bee3-f82bad19e9b7))
+    (pin "2" (uuid 5ff32071-948f-4971-8937-2c3d2a0ce76e))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -12958,7 +13154,7 @@
     (property "Datasheet" "" (at 202.184 39.497 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a7bdfcf7-a734-460a-9296-d9c0ba2f0644))
+    (pin "1" (uuid abff8a73-3723-4aac-976a-c8739fcf5d88))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -12988,7 +13184,7 @@
     (property "Datasheet" "" (at 248.666 85.217 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8b78509d-fc31-4356-b1bf-9d60024efae9))
+    (pin "1" (uuid 1e682a72-fa35-471c-a2fb-b3fab087a33c))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -13049,8 +13245,8 @@
     (property "Datasheet" "~" (at 85.598 298.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e0537959-0d34-4968-aa8c-02e4fcbe5a08))
-    (pin "2" (uuid b9e27e57-7b05-401a-8e8f-41fc5624a73e))
+    (pin "1" (uuid 2626de6b-6241-4f2c-a644-bdde35dbd392))
+    (pin "2" (uuid 73dfe431-e951-4982-9bc2-fb519d1e4d7e))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -13075,7 +13271,7 @@
     (property "Datasheet" "" (at 204.597 32.639 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ea5f9012-23ab-492c-8ab6-554fd08f9f5e))
+    (pin "1" (uuid 966a968d-dfa5-4f98-b56d-af1119f9f431))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -13135,7 +13331,7 @@
     (property "Datasheet" "" (at 122.047 42.291 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c3ca74c4-cb34-4e2a-92c7-5d889a08bbf7))
+    (pin "1" (uuid d60d6e87-5405-466c-b828-9d0bfcb494b0))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -13165,14 +13361,14 @@
     (property "Datasheet" "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf" (at 189.357 141.732 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 37379c66-3e10-4579-83f6-695fcc2a2c4e))
-    (pin "2" (uuid 54266b16-a983-413a-afd7-6c1dd585f05d))
-    (pin "3" (uuid 783d0a1b-0066-42da-97f5-dbe85571a6a8))
-    (pin "4" (uuid 34b99583-80f3-4d0e-896f-832d17c83d02))
-    (pin "5" (uuid 991e2d1b-8385-4ef0-901c-b1f37300ba37))
-    (pin "6" (uuid 8ac9c428-2049-438b-a9ea-dd47b13c688f))
-    (pin "7" (uuid 5c27a4ee-c6e5-4661-b488-0df48f956d28))
-    (pin "8" (uuid b59a472d-4a40-469e-a28e-63bb2e446d94))
+    (pin "1" (uuid 677f3578-af53-419d-854d-318509aa79d9))
+    (pin "2" (uuid d51e1381-d9f0-4cc9-a62d-1d76f1bbd864))
+    (pin "3" (uuid f75bed43-4c6e-4232-88c0-c77fb90c92eb))
+    (pin "4" (uuid af4b08c9-95c3-4bb5-ba88-8b30af408e59))
+    (pin "5" (uuid 6be9c81a-37ca-432c-bf08-d2d9cfb22e80))
+    (pin "6" (uuid 9031e831-83ff-4842-8c57-34acb3f116a7))
+    (pin "7" (uuid 4628b206-ef06-4385-aeee-9f3b8dbe516c))
+    (pin "8" (uuid d6ad4c65-2750-4ee0-b954-9c1abe20f7c8))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -13232,8 +13428,8 @@
     (property "Datasheet" "~" (at -78.105 364.363 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d9c75eb1-49d9-49bf-9521-48e63d6c4147))
-    (pin "2" (uuid 05129c8c-1046-438c-9bc6-692a84d7cef5))
+    (pin "1" (uuid 4fb8dcb1-9d41-4689-b0c1-388e35becb6e))
+    (pin "2" (uuid 2673a0cd-5680-4e13-b06b-e7d2f78149f9))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -13258,7 +13454,7 @@
     (property "Datasheet" "" (at 65.278 42.291 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f55a17b2-f444-4a41-a062-bc572163ba5a))
+    (pin "1" (uuid a99b4b67-0e95-42e1-a21b-9f641e404926))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -13288,7 +13484,7 @@
     (property "Datasheet" "" (at -58.928 328.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 77635c38-d3b5-4685-a958-1f6d9cc3eccc))
+    (pin "1" (uuid ba615585-927a-49d4-931a-46a437ce190d))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -13318,8 +13514,8 @@
     (property "Datasheet" "~" (at 165.989 78.613 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4f5e5692-448f-4273-b22c-52ffa350f369))
-    (pin "2" (uuid 6c431195-db21-44c9-8773-9b7b9380e29d))
+    (pin "1" (uuid 2825e083-8320-4857-8d46-41a95e8f7aca))
+    (pin "2" (uuid 5de0d886-b673-4fc3-b709-0ecc16bf1b7c))
     (instances
       (project "mainboard"
         (path "/1aa2047c-1463-47dc-8fa9-594d0cbf3c24"
@@ -13349,7 +13545,7 @@
     (property "Datasheet" "" (at 35.687 273.685 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9f9147e3-9299-4166-b5ad-bb443ccc2159))
+    (pin "1" (uuid e2b30c98-25f6-4695-8c53-166482e63836))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -13379,8 +13575,8 @@
     (property "Datasheet" "~" (at 122.047 37.592 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid db0b0798-96ed-4b9c-98f4-edd7f6b1eff5))
-    (pin "2" (uuid 44e73cea-7b1a-48b6-95e8-b9b5e1b9c4ec))
+    (pin "1" (uuid 1b1018af-7cc4-46d2-94e2-4eef0c7128f4))
+    (pin "2" (uuid bec19020-2b88-4264-b3cd-11c8af4c48f2))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -13522,7 +13718,7 @@
     (property "Datasheet" "" (at 174.498 128.778 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 09749fdd-6856-4fb1-afd8-c03d1448e1f0))
+    (pin "1" (uuid 6de6d8c1-aecd-4a55-bb6a-7bde8f892d2d))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -13584,7 +13780,7 @@
     (property "Datasheet" "" (at 262.128 72.136 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 137f5642-e58b-435a-98a5-825c4aa1a299))
+    (pin "1" (uuid ed397e40-32a0-47be-b1bb-47f9d3e08f04))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -13703,7 +13899,7 @@
     (property "Datasheet" "" (at 112.141 273.685 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 42c615ef-d713-4ce8-a035-fd171d3e06b0))
+    (pin "1" (uuid 15761149-eb1b-4899-a137-4bfc8c54bf9c))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -13810,8 +14006,8 @@
     (property "Datasheet" "~" (at 196.977 39.497 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0f0848f2-1476-4f78-aa53-65bd94ed8a16))
-    (pin "2" (uuid c547ecdd-46a7-4f39-9aac-894b90a3e8da))
+    (pin "1" (uuid 0661b051-71cc-4695-8d0d-ec15840478e4))
+    (pin "2" (uuid 0c89cc18-3cd4-4226-ba2b-6354c97cfdd4))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -13871,8 +14067,8 @@
     (property "Datasheet" "~" (at 50.165 37.592 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7f2f9813-85c9-44f9-9d42-c117e331f61a))
-    (pin "2" (uuid 81d0aeb9-481b-4b13-9bc5-6eef3fd73a99))
+    (pin "1" (uuid 95510a04-082d-4a5c-8d9c-a9a5dd96271b))
+    (pin "2" (uuid 9aca7b08-fb05-4189-a081-4b8bfa7f9c1b))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -13902,8 +14098,8 @@
     (property "Datasheet" "~" (at 32.131 37.592 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d35fc1b0-6fac-46a2-8726-f35a246092c3))
-    (pin "2" (uuid b34a88a5-bbb3-446b-9006-3502351359c2))
+    (pin "1" (uuid 51ce6486-2934-430c-9240-8d17c9ad9a66))
+    (pin "2" (uuid 755d8fb7-b937-4bfc-a32c-2297e22b3ab4))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -13959,8 +14155,8 @@
     (property "Datasheet" "~" (at 60.325 37.592 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bd231e30-d4f1-4f2d-bfde-de835d8252e3))
-    (pin "2" (uuid 4f066ca9-f738-412c-b5a6-d6f889f3b14a))
+    (pin "1" (uuid 4f7d924f-291a-47d9-8e99-a19936c99978))
+    (pin "2" (uuid 5a09a7e0-b6b9-4a07-bd29-f141f7c80ebd))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -14020,12 +14216,12 @@
     (property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/22039d.pdf" (at -66.929 269.494 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ee1f7e84-7ed4-4c09-bc8d-a419ef993213))
-    (pin "2" (uuid 81c8551f-c1a3-4f08-9792-91c5196fe96a))
-    (pin "3" (uuid 841b9364-ee0e-408f-b5fb-c2bf833cb403))
-    (pin "4" (uuid cae4d9cf-659b-4d5f-a26e-352b1cc954d9))
-    (pin "5" (uuid 2f27c510-33f1-47a3-925b-de220031a754))
-    (pin "6" (uuid befd9cc0-652b-401b-adca-588e213d3fc0))
+    (pin "1" (uuid 42a749a5-0468-4134-89f1-727dba1738a3))
+    (pin "2" (uuid 518f93b1-d89a-497f-a9f2-791ecc690fd1))
+    (pin "3" (uuid ff563a79-8e56-49ab-93ef-6448f726196f))
+    (pin "4" (uuid d238e032-f9aa-46b3-8371-82907ad69070))
+    (pin "5" (uuid b8f00406-07a5-4a86-924c-2eb1ce67ce72))
+    (pin "6" (uuid 6dbaaafa-e169-4f42-b854-77576f34314a))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -14050,11 +14246,11 @@
     (property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2112.pdf" (at 248.666 74.041 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9ee4b236-7ef2-47ca-965e-475f2b00ebe9))
-    (pin "2" (uuid 35e44388-2215-45ca-bdaf-4c32d9dd60bc))
-    (pin "3" (uuid 4cb0ebb0-916a-48b7-896b-ebc821068532))
-    (pin "4" (uuid 299663a0-ed27-4587-9ba5-e9ecb2aaf153))
-    (pin "5" (uuid 442314e1-04f5-42d9-97ae-bd3a7faa2620))
+    (pin "1" (uuid cdb4fd56-45df-45cb-a329-c2ff3acbd126))
+    (pin "2" (uuid f73ab56d-77b3-4268-849d-1a0d229b7a3b))
+    (pin "3" (uuid 54eeba68-d635-4f56-a27e-efc451b18292))
+    (pin "4" (uuid 561983f7-0b0f-482c-b4e7-f24a9b3e35fe))
+    (pin "5" (uuid 9f752aed-5baf-463e-939b-56023dec08bc))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -14110,7 +14306,7 @@
     (property "Datasheet" "" (at -58.928 180.848 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 175df73b-00da-4f0a-a814-b32a64dbe25f))
+    (pin "1" (uuid f75b2ce0-59d1-46f0-ba1b-9701092596ee))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -14140,7 +14336,7 @@
     (property "Datasheet" "" (at 248.539 33.274 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 740cedd9-cfec-4803-8dc4-1e62a7b38c1c))
+    (pin "1" (uuid ea03d942-ce2c-4fee-a5bd-b376d9d97446))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -14170,7 +14366,7 @@
     (property "Datasheet" "" (at 191.008 96.012 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 725c848e-8df4-4a9c-a53b-f15626ecc6c2))
+    (pin "1" (uuid c5862aa9-0261-447b-a6c0-41da7ac0c6e7))
     (instances
       (project "nrf52833-breakout"
         (path "/6c0c06dd-a1fe-49d4-9beb-c2ae63a3eed7"
@@ -14200,8 +14396,8 @@
     (property "Datasheet" "~" (at 65.659 257.937 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 80295b1f-e2d6-45be-935d-76431f6a330e))
-    (pin "2" (uuid 3136f89d-37f0-471c-b092-4abd9b09c40d))
+    (pin "1" (uuid 9bdd1dea-17c7-428b-9fb4-5359918dd93f))
+    (pin "2" (uuid 98db2b2d-150f-4827-b88e-e987b44f7496))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -14226,7 +14422,7 @@
     (property "Datasheet" "" (at 33.782 368.554 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d2c2f7f8-af55-4c02-8d8b-506f9cca9304))
+    (pin "1" (uuid 64ccc2fa-316d-48d1-9ca4-42862d977087))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -14346,8 +14542,8 @@
     (property "Datasheet" "~" (at 40.005 89.281 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 78d31135-229c-4e9f-8ef5-b9b89a372ea7))
-    (pin "2" (uuid e6c7951b-fa41-4a70-8e4b-1360de1460ca))
+    (pin "1" (uuid e3c74cc7-3d3c-481e-9bd0-065ee69a80d5))
+    (pin "2" (uuid 2c770f73-0c30-4136-98ad-8bbd25c02d69))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -14402,8 +14598,8 @@
     (property "Datasheet" "~" (at 144.907 96.012 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c1d4ae79-93c5-4e03-bb77-f83fe0a36540))
-    (pin "2" (uuid afb2a6d8-9bcd-4806-9d04-7887dfc2c566))
+    (pin "1" (uuid 6574fcec-ea3a-4bb1-a0ab-20b5612fc993))
+    (pin "2" (uuid 8df79534-cb2b-470e-9352-8217e077fadc))
     (instances
       (project "Battery Tester"
         (path "/b0096114-e5da-470d-8a3d-9b3ed0a18691"
@@ -14480,8 +14676,8 @@
     (property "Datasheet" "~" (at 241.681 141.224 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 489a2314-ae23-4ebf-98b7-3a72b82c44e2))
-    (pin "2" (uuid aa6f4965-f5ca-4d24-b576-de34436efbd9))
+    (pin "1" (uuid 5d520e80-fd42-4b58-a800-94025f95d245))
+    (pin "2" (uuid 8a88b7be-dfbf-4904-a309-dc3d451369eb))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -14511,7 +14707,7 @@
     (property "Datasheet" "" (at -58.166 74.676 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d924879c-69c3-4f9f-ab1b-6cc9a92f38a1))
+    (pin "1" (uuid 2b3390db-176c-42bd-911e-0e57f81e7ba4))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
@@ -14541,7 +14737,7 @@
     (property "Datasheet" "" (at -58.293 51.181 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c8ecd625-3c73-4a5e-a002-8d54d883a9c2))
+    (pin "1" (uuid 24431090-d7bb-4b31-ab36-cdc81d214c8b))
     (instances
       (project "RP Uno"
         (path "/4205e3fa-18e8-4257-a826-a1d8d54b6275"
